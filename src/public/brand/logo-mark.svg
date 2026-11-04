@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Mariyam Chemrah logo mark">
+<title>Mariyam Chemrah</title><style>.s{stroke:#14281D}.f{fill:#14281D}.l{fill:#2F6B3F}@media (prefers-color-scheme: dark){.s{stroke:#E6EDE4}.f{fill:#E6EDE4}.l{fill:#8EE08A}}</style>
+<defs><mask id="vein" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect width="120" height="120" fill="#fff"/><path d="M85 39 C95 32 103 25 111 21" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round"/></mask></defs><path class="s" d="M103.3 85 A50 50 0 1 1 83.5 15.9" fill="none" stroke-width="7" stroke-linecap="round"/><path class="s" d="M38 86 V40 L60 66 L82 40 V86" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path class="l" d="M82 40 C88 26 100 18 116 18 C112 34 100 44 82 40 Z" mask="url(#vein)"/><circle class="l" cx="60" cy="81" r="4.5"/>
+</svg>
