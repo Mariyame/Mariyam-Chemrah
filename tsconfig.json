@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "src/",
     "paths": {
-      "@/styles/*": ["styles/*"],
-      "@/components/*": ["components/*"],
-      "@/lib/*": ["lib/*"],
+      "*": ["./src/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
     },
-    "ignoreDeprecations": "6.0",
     "target": "ES2017",
     "lib": [
       "dom",
