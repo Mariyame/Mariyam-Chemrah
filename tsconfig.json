@@ -5,6 +5,7 @@
       "@/styles/*": ["./src/styles/*"],
       "@/components/*": ["./src/components/*"],
       "@/lib/*": ["./src/lib/*"],
+      "@/i18n/*": ["./src/i18n/*"]
     },
     "target": "ES2017",
     "lib": [

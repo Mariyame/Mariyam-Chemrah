@@ -1,9 +1,12 @@
 "use client";
 
+
 import Link from "next/link";
 import type { CSSProperties, SVGProps } from "react";
 import type { Hover } from "./Soil";
+import { Fold } from "./Fold";
 import type { Path } from "@/lib/choice";
+import {useTranslations} from 'next-intl';
 
 
 const SEEDS = [
@@ -31,6 +34,7 @@ const STATE = {
   soil: { sun: "46%", stem: 80, a: 0,   b: 0,    c: 0 },
 } as const;
 
+
 function Seed(props: SVGProps<SVGSVGElement>) {
   return (
     <svg width="22" height="26" viewBox="0 0 22 26" fill="none" aria-hidden="true" {...props}>
@@ -54,7 +58,7 @@ function Sprout() {
       height="280"
       viewBox="0 0 220 280"
       aria-hidden="true"
-      className="pointer-events-none absolute bottom-0 left-1/2 -ms-27.5 overflow-visible"
+      className="pointer-events-none absolute bottom-0 left-1/2 -ms-27.5 overflow-visible max-sm:hidden"
     >
       {/* stem: drawn with pathLength + dashoffset */}
       <path
@@ -109,7 +113,8 @@ export function Sky({
   grow: number; 
 }) {
   const s = STATE[hover ?? "idle"];
-
+  const collapsed = hover === "soil";
+  const t = useTranslations('Landing.sky');
   const vars = {
     "--sun-top": s.sun,
     "--stem-offset": s.stem,
@@ -135,14 +140,14 @@ export function Sky({
      
       <div
         aria-hidden="true"
-        className="sun absolute inset-e-[14%] size-33 transition-[top] duration-900 ease-grow"
+        className="sun absolute inset-e-[14%] size-33 transition-[top] duration-900 ease-grow max-sm:size-13 max-sm:shadow-[0_0_0_10px_rgb(201_226_106/.28),0_0_0_22px_rgb(201_226_106/.12)]"
         style={{ top: "var(--sun-top)" }}
       />
 
       {SEEDS.map((p, i) => (
         <Seed
           key={i}
-          className="pointer-events-none absolute text-moss animate-drift"
+          className={`pointer-events-none absolute text-moss animate-drift ${i > 2 ? "max-sm:hidden" : ""}`}
           style={{ left: p.x, top: p.y, animationDuration: `${p.dur}s`, animationDelay: `${p.delay}s` }}
         />
       ))}
@@ -150,16 +155,32 @@ export function Sky({
       <Sprout />
 
       {/* content */}
-      <div className="container-page pointer-events-none relative pb-24">
-        <div className="flex max-w-140 flex-col gap-4">
-          <p className="eyebrow text-moss">Above ground · founders, businesses, teams</p>
-          <p className="font-display text-h1 font-semibold">
-            I have an idea to <span className="accent-word text-moss">grow.</span>
+      <div className={`container-page pointer-events-none relative transition-[padding] duration-800 ease-grow ${
+          collapsed ? "pb-14" : "pb-24 max-sm:pb-22"
+        }`}>
+        <div className="flex max-w-140 flex-col">
+          <Fold open={!collapsed} className="pb-4">
+             <p className="eyebrow text-moss"></p>
+             <p className="eyebrow text-moss">
+              <span className="sm:hidden">{t('eyebrow.mobile')}</span>
+              <span className="hidden sm:inline">{t('eyebrow.desktop')}</span>
+            </p>
+          </Fold>
+          <p className={`origin-bottom-left font-display text-h1 font-semibold transition-transform max-sm:text-[36px] max-sm:leading-none duration-800 ease-grow rtl:origin-bottom-right ${
+              collapsed ? "scale-[0.78]" : "scale-100"
+            }`}>
+            {t.rich("title", {
+              accent: (chunks) => (
+                <span className="accent-word text-moss">{chunks}</span>
+              ),
+            })}
           </p>
-          <div className="flex flex-wrap items-center gap-3.5">
-            <span className="btn bg-forest-ink text-paper">Let’s build it together →</span>
-            <span className="text-[15px] text-ink-muted">websites · SaaS · APIs · e-commerce</span>
-          </div>
+          <Fold open={!collapsed} className="pt-4">
+            <div className="flex flex-wrap items-center gap-3.5">
+              <span className="btn bg-forest-ink text-paper">{t('cta')}</span>
+              <span className="text-[15px] text-ink-muted max-sm:hidden">{t('services')}</span>
+            </div>
+          </Fold>
         </div>
       </div>
     </Link>

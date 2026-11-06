@@ -6,9 +6,9 @@ const SITE_URL =
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
-    { path: "/", priority: 1.0 },
-    { path: "/hire", priority: 0.9 },
-    { path: "/build", priority: 0.9 },
+    { path: "/en", priority: 1.0 },
+    { path: "/en/hire", priority: 0.9 },
+    { path: "/en/build", priority: 0.9 },
   ];
 
   return routes.map(({ path, priority }) => ({

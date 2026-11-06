@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, type CSSProperties } from "react";
+import { useEffect, useId, useRef, useState, type CSSProperties } from "react";
 import type { Path } from "@/lib/choice";
+import { Fold } from "./Fold";
+import {useTranslations} from "next-intl";
 
 export type Hover = "sky" | "soil" | null;
 
@@ -83,7 +85,8 @@ function useLantern<T extends HTMLElement>() {
 }
 
 /* One set of roots, drawn twice: dim (always) and glowing (inside the lantern) */
-function RootPaths({ glow }: { glow?: boolean }) {
+function RootPaths({ glow, pulse }: { glow?: boolean; pulse?: boolean }) {
+  const filterId = useId();
   return (
     <svg
       viewBox="0 0 1440 600"
@@ -91,37 +94,78 @@ function RootPaths({ glow }: { glow?: boolean }) {
       className="absolute inset-0 size-full"
       aria-hidden="true"
     >
-      {ROOTS.map((r, i) => (
-        <path
-          key={i}
-          d={r.d}
-          pathLength={100}
-          fill="none"
-          strokeWidth={r.w}
-          strokeLinecap="round"
-          className={`${glow ? "stroke-glow drop-shadow-[0_0_6px_#8EE08A]" : "stroke-[#24382C]"} transition-[stroke-dashoffset] duration-[1400ms] ease-grow`}
-          style={{
-            strokeDasharray: 100,
-            strokeDashoffset: "var(--root-offset)",
-            transitionDelay: `${r.delay}ms`,
-          }}
-        />
-      ))}
+      {glow && (
+        <defs>
+          {/* SVG filter glow: renders the same on iOS Safari, unlike CSS drop-shadow on paths */}
+          <filter id={filterId} x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+      )}
+      <g filter={glow ? `url(#${filterId})` : undefined}>
+        {ROOTS.map((r, i) => (
+          <path
+            key={i}
+            d={r.d}
+            pathLength={100}
+            fill="none"
+            strokeWidth={glow ? r.w + 0.4 : r.w}
+            strokeLinecap="round"
+            className={`${glow ? "stroke-glow" : "stroke-[#24382C]"} transition-[stroke-dashoffset] duration-[1400ms] ease-grow ${
+              pulse ? "animate-root-pulse" : ""
+            }`}
+            style={{
+              strokeDasharray: 100,
+              strokeDashoffset: "var(--root-offset)",
+              transitionDelay: `${r.delay}ms`,
+              // touch: each root pulses in turn (0, .6s, 1.2s …)
+              animationDelay: pulse ? `${(i * 0.6) % 3.6}s` : undefined,
+            }}
+          />
+        ))}
+      </g>
     </svg>
   );
 }
 
-function BuriedWords({ glow }: { glow?: boolean }) {
-  return BURIED.map((b) => (
+function BuriedWords({ glow, reveal }: { glow?: boolean; reveal?: boolean }) {
+  return BURIED.map((b, i) => (
     <span
       key={b.t}
       aria-hidden="true"
-      className={`absolute font-mono ${glow ? "text-glow" : "text-[#17241D]"}`}
-      style={{ left: b.x, top: b.y, fontSize: b.s, transform: `rotate(${b.r}deg)` }}
+      className={`absolute font-mono ${glow ? "text-glow" : "text-[#17241D]"} ${
+        reveal ? "animate-word-reveal opacity-0" : ""
+      } ${i % 3 !== 0 ? "max-sm:hidden" : ""}`}
+      style={{
+        left: b.x,
+        top: b.y,
+        fontSize: b.s,
+        transform: `rotate(${b.r}deg)`,
+        // touch: words surface one after another
+        animationDelay: reveal ? `${(i / 3) * 2}s` : undefined,
+      }}
     >
       {b.t}
     </span>
   ));
+}
+
+/* True on touch screens (no hover) — they get the autoplay version */
+function useNoHover() {
+  const [noHover, setNoHover] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: none)");
+    const update = () => setNoHover(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+  return noHover;
 }
 
 /* ---------------------------------------------------------------------------
@@ -139,7 +183,8 @@ export function Soil({
   grow: number; // flex-grow from the parent (e.g. 0.68 | 1 | 1.32)
 }) {
   const lantern = useLantern<HTMLAnchorElement>();
-
+  const collapsed = hover === "soil";
+   const t = useTranslations('Landing.soil');  
   // Only these three values change on hover — everything else is CSS.
   const vars = {
     "--root-offset": hover === "soil" ? 0 : hover === "sky" ? 88 : 60,
@@ -166,7 +211,7 @@ export function Soil({
       <BuriedWords />
 
       {/* 2 · glowing layer: revealed only inside the lantern circle */}
-      <div aria-hidden="true" className="lantern pointer-events-none absolute inset-0 [@media(hover:none)]:[mask-image:none] [@media(hover:none)]:animate-twinkle">
+      <div aria-hidden="true" className="lantern pointer-events-none absolute inset-0 [@media(hover:none)]:mask-image:none [@media(hover:none)]:animate-twinkle">
         <RootPaths glow />
         <BuriedWords glow />
       </div>
@@ -176,23 +221,34 @@ export function Soil({
         <span
           key={i}
           aria-hidden="true"
-          className="firefly"
+          className={`firefly ${i % 3 !== 0 ? "max-sm:hidden" : ""}`}
           style={{ left: f.x, top: f.y, animationDuration: `${f.dur}s`, animationDelay: `${f.delay}s` }}
         />
       ))}
 
       {/* 4 · content */}
       <div className="container-page pointer-events-none relative flex justify-end pt-24">
-        <div className="flex max-w-[560px] flex-col items-end gap-4 text-end">
-          <p className="eyebrow text-glow [text-shadow:none]">Below ground · recruiters, engineering leads</p>
-          <p className="font-display text-h1 font-semibold">
-            I’m hiring an <span className="accent-word">engineer.</span>
+        <div className="flex max-w-140 flex-col items-end gap-4 text-end">
+          <p className="eyebrow text-glow text-shadow:none">
+            <span className="sm:hidden">{t('eyebrow.mobile')}</span>
+            <span className="hidden sm:inline">{t('eyebrow.desktop')}</span>
           </p>
-          <span className="btn-highlight bg-glow">Dig into my experience ↓</span>
+          <p className="font-display text-h1 font-semibold">
+            {t.rich("title", {
+              accent: (chunks) => (
+                <span className="accent-word text-moss">{chunks}</span>
+              ),
+            })}
+          </p>
+          <span className="btn-highlight bg-glow">{t('cta')}</span>
         </div>
       </div>
-      <p aria-hidden="true" className="pointer-events-none absolute bottom-7 start-[var(--spacing-gutter)] font-mono text-sm text-mist-3">
-        ↳ move your cursor to dig — something is buried here
+      <p aria-hidden="true" 
+        className={`pointer-events-none absolute bottom-7 inset-s-gutter font-mono text-sm text-mist-3 transition-opacity duration-500 max-sm:hidden ${
+          collapsed ? "opacity-0" : "opacity-100"
+        }`}
+      >
+       {t('hint')}
       </p>
     </Link>
   );

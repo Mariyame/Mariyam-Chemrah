@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import {useTranslations} from 'next-intl';
 import Link from "next/link";
 import { ForkScene } from "@/components/landing/ForkScene";
 
@@ -9,16 +10,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-/* Server component: the fork is the only client island. The <noscript> links
-   keep both paths reachable without JavaScript (and for crawlers). */
 export default function Home() {
+  const t = useTranslations('Landing');
   return (
     <>
-      <ForkScene locale="en" />
+      <ForkScene />
       <noscript>
         <nav aria-label="Choose your path" className="container-page flex gap-4 py-8">
-          <Link href="/work" className="btn-primary">I have an idea to grow</Link>
-          <Link href="/hire" className="btn-outline">I’m hiring an engineer</Link>
+          <Link href="/work" className="btn-primary">{t('sky.cta')}</Link>
+          <Link href="/hire" className="btn-outline">{t('soil.cta')}</Link>
         </nav>
       </noscript>
     </>

@@ -1,0 +1,392 @@
+{
+  "Metadata": {
+    "siteTitle": "Mariyam Chemrah — Ingénieure Full-Stack Senior",
+    "titleTemplate": "%s · Mariyam Chemrah",
+    "siteDescription": "Mariyam Chemrah — ingénieure full-stack senior, plus de 8 ans d’expérience dans la création de plateformes SaaS, d’API REST, de tableaux de bord et d’e-commerce avec PHP (Laravel, Symfony), React, Next.js et TypeScript. Basée à Casablanca, ouverte au télétravail et aux opportunités internationales.",
+    "ogDescription": "Des racines profondes côté back-end, une canopée en React. Plus de 8 ans de SaaS, d’API et d’e-commerce. Ouverte aux postes à distance et à l’international, ainsi qu’aux missions freelance.",
+    "twitterDescription": "Des racines profondes côté back-end, une canopée en React. SaaS, API, e-commerce · Laravel · Symfony · React · Next.js.",
+    "ogImageAlt": "Mariyam Chemrah — Ingénieure Full-Stack Senior. Choisissez votre chemin : lancer un projet ou recruter une ingénieure.",
+    "home": {
+      "title": "Mariyam Chemrah — Ingénieure Full-Stack Senior · Choisissez votre chemin",
+      "description": "Une idée à faire grandir, ou une ingénieure à recruter ? Choisissez votre chemin vers le portfolio freelance ou le portfolio ingénierie de Mariyam Chemrah."
+    },
+    "work": {
+      "title": "Développeuse full-stack freelance",
+      "description": "Sites web, SaaS, API et e-commerce réalisés de bout en bout par Mariyam Chemrah, développeuse full-stack avec plus de 8 ans d’expérience. Casablanca et à distance."
+    },
+    "hire": {
+      "title": "Ingénieure Full-Stack Senior",
+      "description": "Ingénieure full-stack senior — PHP (Laravel, Symfony), React, Next.js, TypeScript. Plus de 8 ans de SaaS, d’API et d’e-commerce. Ouverte aux postes à distance et à l’international."
+    }
+  },
+
+  "Common": {
+    "name": "Mariyam Chemrah",
+    "firstName": "Mariyam",
+    "role": "Ingénieure Full-Stack Senior",
+    "tagline": "Ingénieure full-stack",
+    "skipToContent": "Aller au contenu principal",
+    "languageNav": "Langue",
+    "mainNav": "Navigation principale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "languages": {
+      "en": "EN",
+      "fr": "FR",
+      "ar": "العربية"
+    },
+    "location": "Casablanca, Maroc",
+    "email": "mariam.chemrah@gmail.com",
+    "phone": "+212 640 505 810",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "freelancePlatforms": "Malt / Upwork",
+      "resume": "CV (PDF)",
+      "downloadResume": "Télécharger le CV (PDF)",
+      "emailMe": "M’écrire",
+      "callMe": "Appeler le {phone}"
+    },
+    "switchPath": {
+      "toWork": "Vous cherchez une freelance ?",
+      "toHire": "Vous recrutez une ingénieure ?",
+      "choose": "Choisir un autre chemin"
+    },
+    "copyright": "© {year} Mariyam Chemrah"
+  },
+
+  "Landing": {
+    "srTitle": "Mariyam Chemrah — choisissez votre chemin : lancer un projet ou recruter une ingénieure",
+    "sky": {
+      "ariaLabel": "J’ai une idée à faire grandir — ouvrir le portfolio freelance",
+      "eyebrow": {
+        "mobile": "À la surface · clients",
+        "desktop": "À la surface · fondateurs, entreprises, équipes"  
+      },
+      "title": "J’ai une idée à faire <accent>grandir.</accent>",
+      "cta": "Construisons-la ensemble →",
+      "services": "sites web · SaaS · API · e-commerce"
+    },
+    "soil": {
+      "ariaLabel": "Je recrute une ingénieure — ouvrir le portfolio ingénierie",
+      "eyebrow": "Sous la surface · recruteurs, responsables techniques",
+      "title": "Je recrute une <accent>ingénieure.</accent>",
+      "cta": "Explorer mon parcours ↓",
+      "stack": "8+ ans · PHP · Laravel · React · TS",
+      "hint": "↳ déplacez le curseur pour creuser — quelque chose est enfoui ici"
+    },
+    "horizon": {
+      "greeting": "Bonjour, je suis Mariyam — ingénieure full-stack.",
+      "question": "Dans quelle direction grandissez-vous ?"
+    },
+    "seed": {
+      "plant": "Planter la graine",
+      "close": "Refermer la fleur",
+      "found": "Vous avez trouvé la graine. Tout grand produit commence par une."
+    },
+    "noscript": {
+      "nav": "Choisissez votre chemin",
+      "work": "J’ai une idée à faire grandir",
+      "hire": "Je recrute une ingénieure"
+    }
+  },
+
+  "Work": {
+    "nav": {
+      "services": "Services",
+      "work": "Réalisations",
+      "process": "Méthode",
+      "pricing": "Tarifs",
+      "cta": "Lancer un projet"
+    },
+    "hero": {
+      "badge": "Disponible pour de nouveaux projets — Casablanca & à distance",
+      "title": "Des produits web qui <accent>prennent racine</accent> et continuent de grandir.",
+      "intro": "Je suis Mariyam, développeuse full-stack avec plus de 8 ans d’expérience dans la création de plateformes SaaS, d’API, de tableaux de bord, d’e-commerce et de CMS — du premier schéma de base de données au jour du lancement, et bien après.",
+      "ctaPrimary": "Réserver un appel découverte",
+      "ctaSecondary": "Voir mes réalisations",
+      "photoAlt": "Mariyam Chemrah, développeuse full-stack, tenant son ordinateur portable en extérieur",
+      "stats": {
+        "years": { "value": "8+", "label": "ans à livrer pour le web" },
+        "fullStack": { "value": "Full-stack", "label": "conception → base de données → déploiement" },
+        "languages": { "value": "AR · FR · EN", "label": "on travaille dans votre langue" }
+      }
+    },
+    "stackStrip": {
+      "label": "Mes technologies"
+    },
+    "services": {
+      "eyebrow": "01 — Ce que je peux faire grandir pour vous",
+      "title": "Une seule développeuse pour tout l’écosystème.",
+      "intro": "Pas de passage de relais entre « la personne front-end » et « la personne back-end ». Vous avez une seule interlocutrice responsable, qui comprend comment chaque couche s’imbrique.",
+      "items": {
+        "apps": {
+          "title": "Applications web & SaaS sur mesure",
+          "body": "Tableaux de bord, portails clients et plateformes multi-locataires sous Laravel ou Symfony, avec un front-end React / Next.js."
+        },
+        "apis": {
+          "title": "API & intégrations",
+          "body": "API REST sécurisées, webhooks, OAuth et authentification par jetons — et tout ce qui relie vos outils à Google, aux paiements et aux services tiers."
+        },
+        "websites": {
+          "title": "Sites web & WordPress",
+          "body": "Des sites rapides et responsives, et des plugins WordPress sur mesure que votre équipe peut vraiment gérer après le lancement."
+        },
+        "ecommerce": {
+          "title": "E-commerce & marketplaces",
+          "body": "Boutiques et marketplaces multi-vendeurs avec paiement en ligne, dont PayPal et la passerelle marocaine CMI."
+        },
+        "analytics": {
+          "title": "Analytics & automatisation",
+          "body": "Configuration et automatisation de GA4, suivi des leads et scripts qui vous libèrent des tâches répétitives."
+        },
+        "care": {
+          "title": "Suivi & maintenance",
+          "body": "Mises à jour, optimisation des performances, déploiements sous Docker et corrections — pour que votre produit reste en forme longtemps après le lancement."
+        }
+      }
+    },
+    "work": {
+      "eyebrow": "02 — Réalisations choisies",
+      "title": "Des projets aux racines profondes.",
+      "screenshot": "[Capture du projet]",
+      "projects": {
+        "myWall": {
+          "category": "E-commerce · Marketplace",
+          "title": "My Wall — une marketplace pour artistes indépendants",
+          "body": "Conception et développement d’une marketplace ouverte où les artistes publient leurs œuvres et les vendent sous forme de décoration murale, d’objets déco et de produits lifestyle, avec intégration des paiements PayPal et CMI."
+        },
+        "dealerBuilder": {
+          "category": "SaaS · Automobile",
+          "title": "Un créateur de sites pour concessionnaires automobiles",
+          "body": "Chez Auto Dealers Digital, j’ai contribué à un créateur de sites SaaS sous Laravel et WordPress, avec des endpoints REST événementiels, des webhooks et des tâches en file d’attente pour la rapidité."
+        },
+        "ga4": {
+          "category": "Analytics · Automatisation",
+          "title": "GA4, piloté par le code",
+          "body": "Automatisation de la création et de la gestion des propriétés et des données Google Analytics 4 avec des bibliothèques PHP, en remplacement de la configuration manuelle."
+        },
+        "leadTracking": {
+          "category": "Données · Personnalisation",
+          "title": "Un suivi des leads qui personnalise le contenu",
+          "body": "Collecte et analyse des données de suivi des leads pour adapter ce que voient les visiteurs et renforcer l’engagement."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "03 — Comment nous travaillons ensemble",
+      "title": "De la graine à la floraison.",
+      "steps": {
+        "seed": {
+          "label": "01 · Graine",
+          "title": "Découverte",
+          "body": "Un appel gratuit pour comprendre vos objectifs, vos utilisateurs et votre budget. Vous recevez un périmètre et un devis clairs."
+        },
+        "root": {
+          "label": "02 · Racine",
+          "title": "Architecture",
+          "body": "La conception technique et le modèle de données d’abord, pour un produit aux fondations solides et évolutives."
+        },
+        "grow": {
+          "label": "03 · Croissance",
+          "title": "Développement en sprints",
+          "body": "Des itérations agiles avec un lien de préproduction à tester chaque semaine. Aucune boîte noire."
+        },
+        "bloom": {
+          "label": "04 · Floraison",
+          "title": "Lancement & suivi",
+          "body": "Mise en production, documentation et passation — et un accompagnement continu si vous le souhaitez."
+        }
+      }
+    },
+    "pricing": {
+      "eyebrow": "04 — Comment travailler avec moi",
+      "title": "Choisissez la formule qui vous convient.",
+      "badge": "La plus flexible",
+      "plans": {
+        "fixed": {
+          "title": "Projet au forfait",
+          "price": "[À partir de — prix]",
+          "body": "Un site, une application ou une intégration avec un cahier des charges, un calendrier et un prix fixés dès le départ."
+        },
+        "monthly": {
+          "title": "Partenariat mensuel",
+          "price": "[Prix / mois]",
+          "body": "Un volume de développement dédié chaque mois, pour les produits qui évoluent en continu."
+        },
+        "consulting": {
+          "title": "Conseil & audits",
+          "price": "[Taux horaire]",
+          "body": "Revues de code, audits de performance et conseils techniques sur votre stack existante."
+        }
+      }
+    },
+    "contact": {
+      "title": "Plantons<br></br>quelque chose de <accent>beau.</accent>",
+      "body": "Parlez-moi de votre projet — je réponds généralement sous {responseTime}.",
+      "responseTime": "[délai de réponse]",
+      "footer": "Casablanca, Maroc · À distance, partout dans le monde"
+    }
+  },
+
+  "Hire": {
+    "nav": {
+      "stack": "Stack",
+      "experience": "Expérience",
+      "practice": "Méthode",
+      "education": "Formation",
+      "resume": "CV (PDF)"
+    },
+    "hero": {
+      "prompt": "$ whoami",
+      "title": "Ingénieure Full-Stack Senior.<br></br><muted>Des racines profondes côté back-end,</muted> <accent>une canopée en React.</accent>",
+      "intro": "Plus de 8 ans à concevoir, développer et maintenir des plateformes SaaS, des API REST, des tableaux de bord et des systèmes e-commerce — de solides bases en PHP (Laravel, Symfony) et un intérêt croissant pour les architectures API-first avec React, Next.js, TypeScript et Docker.",
+      "chips": {
+        "remote": "Ouverte aux postes à distance & à l’international",
+        "hours": "Casablanca · fuseau compatible avec l’Europe",
+        "languages": "English · Français · العربية"
+      },
+      "ctaPrimary": "Me contacter",
+      "photoAlt": "Mariyam Chemrah, ingénieure full-stack senior",
+      "badges": {
+        "experienceLabel": "expérience",
+        "experienceValue": "<accent>8+</accent> ans",
+        "statusLabel": "statut",
+        "statusValue": "disponible"
+      }
+    },
+    "glance": {
+      "ariaLabel": "En bref",
+      "items": {
+        "years": { "value": "8+ ans", "label": "d’ingénierie web professionnelle" },
+        "php": { "value": "PHP 8+", "label": "Laravel · Symfony · API Platform" },
+        "react": { "value": "React / TS", "label": "Next.js · Tailwind CSS" },
+        "endToEnd": { "value": "De bout en bout", "label": "conception → tests → déploiement → maintenance" }
+      }
+    },
+    "stack": {
+      "eyebrow": "01 / Stack",
+      "title": "Un système racinaire, pas une liste de mots-clés.",
+      "intro": "Ce que voient les utilisateurs pousse sur ce qu’ils ne voient pas. Au-dessus du sol : l’interface. En dessous : les services, les données et l’infrastructure qui font tout vivre.",
+      "canopy": {
+        "title": "Canopée — Front-end",
+        "hint": "ce que touchent les utilisateurs"
+      },
+      "soilLine": {
+        "label": "Ligne de sol",
+        "protocols": "REST · webhooks · OAuth / jetons"
+      },
+      "roots": {
+        "backend": "Back-end",
+        "data": "Données",
+        "devops": "DevOps & Cloud",
+        "integrations": "Intégrations & CMS"
+      }
+    },
+    "experience": {
+      "eyebrow": "02 / Expérience",
+      "title": "Les cernes de croissance.",
+      "present": "aujourd’hui",
+      "jobs": {
+        "independent": {
+          "period": "Oct. 2024 — {present}",
+          "role": "Développeuse Full-Stack indépendante",
+          "company": "Freelance · Casablanca",
+          "body": "Conception et livraison de sites et d’applications web pour des clients, avec React / Next.js, JavaScript / TypeScript et Symfony."
+        },
+        "autoDealers": {
+          "period": "Mai 2022 — Sept. 2024",
+          "role": "Développeuse Full-Stack PHP",
+          "company": "Auto Dealers Digital · Casablanca",
+          "bullets": {
+            "b1": "Contribution à un créateur de sites SaaS développé avec Laravel et WordPress.",
+            "b2": "Développement d’endpoints REST et de webhooks sécurisés et événementiels, avec authentification par jetons et files d’attente Laravel asynchrones.",
+            "b3": "Automatisation de la gestion des propriétés et des données GA4 avec des bibliothèques PHP.",
+            "b4": "Collecte et analyse des données de suivi des leads pour personnaliser le contenu (JavaScript, MongoDB, Python / FastAPI).",
+            "b5": "Développement de plugins WordPress sur mesure."
+          }
+        },
+        "delit": {
+          "period": "Oct. 2021 — Févr. 2022",
+          "role": "Développeuse Web",
+          "company": "Delit D’Influence · À distance",
+          "body": "Interfaces responsives avec des templates Twig configurables ; travaux e-commerce sur Sylius aux côtés d’ingénieurs seniors."
+        },
+        "myWall": {
+          "period": "Mars 2019 — Juin 2021",
+          "role": "Développeuse Full-Stack E-commerce",
+          "company": "My Wall · Casablanca",
+          "body": "Conception et développement d’une marketplace ouverte pour artistes indépendants — décoration murale, objets déco et produits lifestyle — sous Laravel, avec paiements PayPal et CMI."
+        },
+        "irma": {
+          "period": "2014 — Déc. 2018",
+          "role": "Développeuse Web Junior & Stagiaire",
+          "company": "Irma Service · Casablanca",
+          "body": "Analyse des besoins et sites web pour des petites entreprises (HTML5, CSS3, JavaScript / jQuery, PHP, WordPress) ; amélioration du processus d’archivage des données d’une application PHP interne."
+        }
+      }
+    },
+    "practice": {
+      "eyebrow": "03 / Ma façon de coder",
+      "title": "Un code qui reste en bonne santé.",
+      "items": {
+        "solid": {
+          "code": "clean_code()",
+          "title": "SOLID & POO",
+          "body": "Conception orientée objet et design patterns pour garder les grandes bases de code lisibles."
+        },
+        "review": {
+          "code": "review && test",
+          "title": "Revues & tests",
+          "body": "Revues de code, workflows Git et tests à chaque changement."
+        },
+        "performance": {
+          "code": "queue:work",
+          "title": "Performance",
+          "body": "Files d’attente asynchrones, cache Redis et requêtes optimisées pour des applications rapides et robustes."
+        },
+        "docs": {
+          "code": "README.md",
+          "title": "Agile & documenté",
+          "body": "Rituels Scrum et documentation technique sur laquelle l’équipe peut s’appuyer."
+        }
+      }
+    },
+    "education": {
+      "eyebrow": "04 / Formation & langues",
+      "title": "Là où tout a été planté.",
+      "headings": {
+        "education": "Formation",
+        "certifications": "Certifications",
+        "languages": "Langues"
+      },
+      "degrees": {
+        "bachelor": {
+          "title": "Licence professionnelle — Développement Web & Mobile",
+          "school": "Université Paris 13, France · 2018–2019"
+        },
+        "technician": {
+          "title": "Diplôme de Technicien Spécialisé — Développement Informatique",
+          "school": "Institut Spécialisé de Technologie Appliquée, Casablanca · 2012–2014"
+        }
+      },
+      "certs": {
+        "delf": { "title": "DELF B2", "detail": "Institut français de Casablanca · 2022" },
+        "voxy": { "title": "Voxy Proficiency — Intermédiaire avancé", "detail": "Juin 2025" },
+        "duolingo": { "title": "Duolingo English", "detail": "Compétence professionnelle" }
+      },
+      "languages": {
+        "arabic": { "name": "Arabe", "level": "langue maternelle" },
+        "french": { "name": "Français", "level": "B2+" },
+        "english": { "name": "Anglais", "level": "B2 · professionnel" }
+      }
+    },
+    "contact": {
+      "prompt": "$ ./hire --role=\"senior full-stack\"",
+      "title": "Vous construisez une équipe<br></br>qui livre ? <accent>Parlons-en.</accent>",
+      "relocation": "À distance / relocalisation : {preference}",
+      "relocationPreference": "[votre préférence]",
+      "footer": "Casablanca, Maroc"
+    }
+  }
+}

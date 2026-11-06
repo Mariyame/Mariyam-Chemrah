@@ -1,0 +1,395 @@
+{
+  "Metadata": {
+    "siteTitle": "Mariyam Chemrah — Senior Full-Stack Engineer",
+    "titleTemplate": "%s · Mariyam Chemrah",
+    "siteDescription": "Mariyam Chemrah — senior full-stack engineer with 8+ years building SaaS platforms, REST APIs, dashboards and e-commerce with PHP (Laravel, Symfony), React, Next.js and TypeScript. Based in Casablanca, open to remote and international work.",
+    "ogDescription": "Deep roots in the back end, a canopy in React. 8+ years building SaaS, APIs and e-commerce. Open to remote & international roles and freelance projects.",
+    "twitterDescription": "Deep roots in the back end, a canopy in React. SaaS, APIs, e-commerce · Laravel · Symfony · React · Next.js.",
+    "ogImageAlt": "Mariyam Chemrah — Senior Full-Stack Engineer. Choose your path: build a project or hire an engineer.",
+    "home": {
+      "title": "Mariyam Chemrah — Senior Full-Stack Engineer · Choose your path",
+      "description": "Have an idea to grow, or hiring an engineer? Pick your path to Mariyam Chemrah’s freelance or engineering portfolio."
+    },
+    "work": {
+      "title": "Freelance full-stack developer",
+      "description": "Websites, SaaS, APIs and e-commerce built end to end by Mariyam Chemrah, a full-stack developer with 8+ years of experience. Casablanca and remote."
+    },
+    "hire": {
+      "title": "Senior Full-Stack Engineer",
+      "description": "Senior full-stack engineer — PHP (Laravel, Symfony), React, Next.js, TypeScript. 8+ years of SaaS, APIs and e-commerce. Open to remote and international roles."
+    }
+  },
+
+  "Common": {
+    "name": "Mariyam Chemrah",
+    "firstName": "Mariyam",
+    "role": "Senior Full-Stack Engineer",
+    "tagline": "Full-stack engineer",
+    "skipToContent": "Skip to main content",
+    "languageNav": "Language",
+    "mainNav": "Main",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languages": {
+      "en": "EN",
+      "fr": "FR",
+      "ar": "العربية"
+    },
+    "location": "Casablanca, Morocco",
+    "email": "mariam.chemrah@gmail.com",
+    "phone": "+212 640 505 810",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "freelancePlatforms": "Malt / Upwork",
+      "resume": "Résumé PDF",
+      "downloadResume": "Download résumé (PDF)",
+      "emailMe": "Email me",
+      "callMe": "Call {phone}"
+    },
+    "switchPath": {
+      "toWork": "Looking for a freelancer?",
+      "toHire": "Hiring an engineer?",
+      "choose": "Choose another path"
+    },
+    "copyright": "© {year} Mariyam Chemrah"
+  },
+
+  "Landing": {
+    "srTitle": "Mariyam Chemrah — choose your path: start a project or hire an engineer",
+    "sky": {
+      "ariaLabel": "I have an idea to grow — open the freelance portfolio",
+      "eyebrow": {
+        "mobile": "Above ground · clients",
+        "desktop": "Above ground · founders, businesses, teams"
+      },
+      "title": "I have an idea to <accent>grow.</accent>",
+      "cta": "Let’s build it together →",
+      "services": "websites · SaaS · APIs · e-commerce"
+    },
+    "soil": {
+      "ariaLabel": "I’m hiring an engineer — open the engineering portfolio",
+      "eyebrow": {
+        "mobile": "Below ground · recruiters",
+        "desktop": "Below ground · recruiters, engineering leads"
+      },
+      "title": "I’m hiring an <accent>engineer.</accent>",
+      "cta": "Dig into my experience ↓",
+      "stack": "8+ yrs · PHP · Laravel · React · TS",
+      "hint": "↳ move your cursor to dig — something is buried here"
+    },
+    "horizon": {
+      "greeting": "Hello, I’m Mariyam — full-stack engineer.",
+      "question": "Which way are you growing?"
+    },
+    "seed": {
+      "plant": "Plant the seed",
+      "close": "Close the flower",
+      "found": "You found the seed. Every great product starts with one."
+    },
+    "noscript": {
+      "nav": "Choose your path",
+      "work": "I have an idea to grow",
+      "hire": "I’m hiring an engineer"
+    }
+  },
+
+  "Work": {
+    "nav": {
+      "services": "Services",
+      "work": "Work",
+      "process": "Process",
+      "pricing": "Pricing",
+      "cta": "Start a project"
+    },
+    "hero": {
+      "badge": "Taking on new projects — Casablanca & remote",
+      "title": "Web products that <accent>take root</accent> and keep growing.",
+      "intro": "I’m Mariyam, a full-stack developer with 8+ years of experience building SaaS platforms, APIs, dashboards, e-commerce and CMS solutions — from the first sketch of the database to launch day and the years after.",
+      "ctaPrimary": "Book a discovery call",
+      "ctaSecondary": "See my work",
+      "photoAlt": "Mariyam Chemrah, full-stack developer, holding her laptop outdoors",
+      "stats": {
+        "years": { "value": "8+", "label": "years shipping for the web" },
+        "fullStack": { "value": "Full-stack", "label": "design → database → deploy" },
+        "languages": { "value": "AR · FR · EN", "label": "work in your language" }
+      }
+    },
+    "stackStrip": {
+      "label": "Stack I work in"
+    },
+    "services": {
+      "eyebrow": "01 — What I can grow for you",
+      "title": "One developer for the whole ecosystem.",
+      "intro": "No hand-offs between a “front-end person” and a “back-end person”. You get one accountable partner who understands how every layer connects.",
+      "items": {
+        "apps": {
+          "title": "Custom web apps & SaaS",
+          "body": "Dashboards, client portals and multi-tenant platforms built on Laravel or Symfony with a React / Next.js front end."
+        },
+        "apis": {
+          "title": "APIs & integrations",
+          "body": "Secure REST APIs, webhooks, OAuth and token auth — and the glue that connects your tools to Google, payments and third parties."
+        },
+        "websites": {
+          "title": "Websites & WordPress",
+          "body": "Fast, responsive sites and custom WordPress plugins your team can actually manage after launch."
+        },
+        "ecommerce": {
+          "title": "E-commerce & marketplaces",
+          "body": "Stores and multi-vendor marketplaces with online payments, including PayPal and Morocco’s CMI gateway."
+        },
+        "analytics": {
+          "title": "Analytics & automation",
+          "body": "GA4 setup and automation, lead tracking and the scripts that take repetitive work off your plate."
+        },
+        "care": {
+          "title": "Care & maintenance",
+          "body": "Updates, performance tuning, Docker-based deployments and fixes — so your product stays healthy long after launch."
+        }
+      }
+    },
+    "work": {
+      "eyebrow": "02 — Selected work",
+      "title": "Projects with deep roots.",
+      "screenshot": "[Project screenshot]",
+      "projects": {
+        "myWall": {
+          "category": "E-commerce · Marketplace",
+          "title": "My Wall — a marketplace for independent artists",
+          "body": "Designed and built an open marketplace where artists upload their work and sell it across wall art, home decor and lifestyle products, with PayPal and CMI payment integration."
+        },
+        "dealerBuilder": {
+          "category": "SaaS · Automotive",
+          "title": "A website builder for car dealerships",
+          "body": "At Auto Dealers Digital I helped build a SaaS website builder on Laravel and WordPress, with event-driven REST endpoints, webhooks and queued jobs for speed."
+        },
+        "ga4": {
+          "category": "Analytics · Automation",
+          "title": "GA4, managed by code",
+          "body": "Automated the creation and management of Google Analytics 4 properties and data with PHP libraries, replacing manual setup."
+        },
+        "leadTracking": {
+          "category": "Data · Personalisation",
+          "title": "Lead tracking that personalises content",
+          "body": "Collected and analysed lead-tracking data to tailor what visitors see and lift engagement."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "03 — How we work together",
+      "title": "From seed to bloom.",
+      "steps": {
+        "seed": {
+          "label": "01 · Seed",
+          "title": "Discovery",
+          "body": "A free call to understand your goals, users and budget. You get a clear scope and estimate."
+        },
+        "root": {
+          "label": "02 · Root",
+          "title": "Architecture",
+          "body": "Technical design and data model first, so the product has foundations that scale."
+        },
+        "grow": {
+          "label": "03 · Grow",
+          "title": "Build in sprints",
+          "body": "Agile iterations with a staging link you can click through every week. No black boxes."
+        },
+        "bloom": {
+          "label": "04 · Bloom",
+          "title": "Launch & care",
+          "body": "Deployment, documentation and handover — plus ongoing support if you want it."
+        }
+      }
+    },
+    "pricing": {
+      "eyebrow": "04 — Ways to work with me",
+      "title": "Pick the shape that fits.",
+      "badge": "Most flexible",
+      "plans": {
+        "fixed": {
+          "title": "Fixed-scope project",
+          "price": "[From — price]",
+          "body": "A website, app or integration with a clear brief, timeline and price agreed up front."
+        },
+        "monthly": {
+          "title": "Monthly partnership",
+          "price": "[Price / month]",
+          "body": "A dedicated block of development each month for products that keep evolving."
+        },
+        "consulting": {
+          "title": "Consulting & audits",
+          "price": "[Hourly rate]",
+          "body": "Code reviews, performance checks and technical advice on your existing stack."
+        }
+      }
+    },
+    "contact": {
+      "title": "Let’s plant<br></br>something <accent>good.</accent>",
+      "body": "Tell me about your project — I usually reply within {responseTime}.",
+      "responseTime": "[response time]",
+      "footer": "Casablanca, Morocco · Remote worldwide"
+    }
+  },
+
+  "Hire": {
+    "nav": {
+      "stack": "Stack",
+      "experience": "Experience",
+      "practice": "Practice",
+      "education": "Education",
+      "resume": "Résumé PDF"
+    },
+    "hero": {
+      "prompt": "$ whoami",
+      "title": "Senior Full-Stack Engineer.<br></br><muted>Deep roots in the back end,</muted> <accent>a canopy in React.</accent>",
+      "intro": "8+ years designing, building and maintaining SaaS platforms, REST APIs, dashboards and e-commerce systems — strong PHP fundamentals (Laravel, Symfony) and a growing focus on API-first architectures with React, Next.js, TypeScript and Docker.",
+      "chips": {
+        "remote": "Open to remote & international roles",
+        "hours": "Casablanca · overlaps EU hours",
+        "languages": "English · Français · العربية"
+      },
+      "ctaPrimary": "Get in touch",
+      "photoAlt": "Mariyam Chemrah, senior full-stack engineer",
+      "badges": {
+        "experienceLabel": "experience",
+        "experienceValue": "<accent>8+</accent> years",
+        "statusLabel": "status",
+        "statusValue": "available for hire"
+      }
+    },
+    "glance": {
+      "ariaLabel": "At a glance",
+      "items": {
+        "years": { "value": "8+ yrs", "label": "professional web engineering" },
+        "php": { "value": "PHP 8+", "label": "Laravel · Symfony · API Platform" },
+        "react": { "value": "React / TS", "label": "Next.js · Tailwind CSS" },
+        "endToEnd": { "value": "End-to-end", "label": "design → test → deploy → maintain" }
+      }
+    },
+    "stack": {
+      "eyebrow": "01 / Stack",
+      "title": "A root system, not a buzzword list.",
+      "intro": "What users see grows from what they don’t. Above the soil line: the interface. Below it: the services, data and infrastructure that keep everything alive.",
+      "canopy": {
+        "title": "Canopy — Front end",
+        "hint": "what users touch"
+      },
+      "soilLine": {
+        "label": "Soil line",
+        "protocols": "REST · webhooks · OAuth / tokens"
+      },
+      "roots": {
+        "backend": "Back end",
+        "data": "Data",
+        "devops": "DevOps & Cloud",
+        "integrations": "Integrations & CMS"
+      }
+    },
+    "experience": {
+      "eyebrow": "02 / Experience",
+      "title": "Growth rings.",
+      "present": "present",
+      "jobs": {
+        "independent": {
+          "period": "Oct 2024 — {present}",
+          "role": "Independent Full-Stack Developer",
+          "company": "Self-employed · Casablanca",
+          "body": "Designing and shipping websites and web applications for clients with React / Next.js, JavaScript / TypeScript and Symfony."
+        },
+        "autoDealers": {
+          "period": "May 2022 — Sep 2024",
+          "role": "PHP Full-Stack Developer",
+          "company": "Auto Dealers Digital · Casablanca",
+          "bullets": {
+            "b1": "Contributed to a SaaS website builder built on Laravel and WordPress.",
+            "b2": "Built secure, event-driven REST endpoints and webhooks with token auth and asynchronous Laravel queues.",
+            "b3": "Automated GA4 property and data management with PHP libraries.",
+            "b4": "Collected and analysed lead-tracking data to personalise content (JavaScript, MongoDB, Python / FastAPI).",
+            "b5": "Developed custom WordPress plugins."
+          }
+        },
+        "delit": {
+          "period": "Oct 2021 — Feb 2022",
+          "role": "Web Developer",
+          "company": "Delit D’Influence · Remote",
+          "body": "Responsive interfaces with configurable Twig templates; e-commerce work alongside senior engineers on Sylius."
+        },
+        "myWall": {
+          "period": "Mar 2019 — Jun 2021",
+          "role": "E-commerce Full-Stack Developer",
+          "company": "My Wall · Casablanca",
+          "body": "Designed and built an open marketplace for independent artists — wall art, home decor and lifestyle products — on Laravel with PayPal and CMI payments."
+        },
+        "irma": {
+          "period": "2014 — Dec 2018",
+          "role": "Junior Web Developer & Intern",
+          "company": "Irma Service · Casablanca",
+          "body": "Requirements analysis and websites for small businesses (HTML5, CSS3, JavaScript / jQuery, PHP, WordPress); improved the data-archiving process of an internal PHP application."
+        }
+      }
+    },
+    "practice": {
+      "eyebrow": "03 / How I engineer",
+      "title": "Code that stays healthy.",
+      "items": {
+        "solid": {
+          "code": "clean_code()",
+          "title": "SOLID & OOP",
+          "body": "Object-oriented design and patterns that keep large codebases readable."
+        },
+        "review": {
+          "code": "review && test",
+          "title": "Reviews & testing",
+          "body": "Code reviews, Git workflows and tests as part of every change."
+        },
+        "performance": {
+          "code": "queue:work",
+          "title": "Performance",
+          "body": "Async queues, caching with Redis and lean queries for fast, resilient apps."
+        },
+        "docs": {
+          "code": "README.md",
+          "title": "Agile & documented",
+          "body": "Scrum rituals and technical documentation teammates can build on."
+        }
+      }
+    },
+    "education": {
+      "eyebrow": "04 / Education & languages",
+      "title": "Where it was planted.",
+      "headings": {
+        "education": "Education",
+        "certifications": "Certifications",
+        "languages": "Languages"
+      },
+      "degrees": {
+        "bachelor": {
+          "title": "Professional Bachelor’s — Web & Mobile Development",
+          "school": "Université Paris 13, France · 2018–2019"
+        },
+        "technician": {
+          "title": "Specialized Technician Diploma — Software Development",
+          "school": "Specialized Institute of Applied Technology, Casablanca · 2012–2014"
+        }
+      },
+      "certs": {
+        "delf": { "title": "DELF B2", "detail": "Institut français de Casablanca · 2022" },
+        "voxy": { "title": "Voxy Proficiency — High Intermediate", "detail": "June 2025" },
+        "duolingo": { "title": "Duolingo English", "detail": "Professional working proficiency" }
+      },
+      "languages": {
+        "arabic": { "name": "Arabic", "level": "native" },
+        "french": { "name": "French", "level": "B2+" },
+        "english": { "name": "English", "level": "B2 · professional" }
+      }
+    },
+    "contact": {
+      "prompt": "$ ./hire --role=\"senior full-stack\"",
+      "title": "Building a team<br></br>that ships? <accent>Let’s talk.</accent>",
+      "relocation": "Remote / relocation: {preference}",
+      "relocationPreference": "[your preference]",
+      "footer": "Casablanca, Morocco"
+    }
+  }
+}

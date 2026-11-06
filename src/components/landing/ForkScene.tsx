@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useState, type MouseEvent } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 import { Header } from "./Header";
 import { Horizon } from "./Horizon";
 import { Sky } from "./Sky";
@@ -14,10 +14,12 @@ const FLOOD: Record<Path, string> = {
   hire: "var(--color-night-soil)",
 };
 
+
 type Chosen = { path: Path; x: number; y: number; open: boolean } | null;
 
 
-export function ForkScene({ locale = "en" }: { locale?: string }) {
+export function ForkScene() {
+  const { locale } = useParams<{ locale: string }>();
   const router = useRouter();
   const [hover, setHover] = useState<Hover>(null);
   const [chosen, setChosen] = useState<Chosen>(null);
