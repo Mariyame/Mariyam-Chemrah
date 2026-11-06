@@ -155,32 +155,35 @@ export function Sky({
       <Sprout />
 
       {/* content */}
-      <div className={`container-page pointer-events-none relative transition-[padding] duration-800 ease-grow ${
-          collapsed ? "pb-14" : "pb-24 max-sm:pb-12"
-        }`}>
+      <div
+        className={`container-page pointer-events-none relative transition-[padding] duration-800 ease-grow ${
+          collapsed ? "pb-14" : "pb-[clamp(3rem,6vh,6rem)] max-sm:pb-12"
+        }`}
+      >
         <div className="flex max-w-140 flex-col">
           <Fold open={!collapsed} className="pb-4">
-             <p className="eyebrow text-moss"></p>
-              <p className="eyebrow text-moss max-sm:text-[11px] max-sm:tracking-[0.12em]">
-                <span className="sm:hidden">{t("eyebrow.mobile")}</span>
-                <span className="hidden sm:inline">{t("eyebrow.desktop")}</span>
-              </p>
+            <p className="eyebrow text-moss max-sm:text-[11px] max-sm:tracking-[0.12em]">
+              <span className="sm:hidden">{t("eyebrow.mobile")}</span>
+              <span className="hidden sm:inline">{t("eyebrow.desktop")}</span>
+            </p>
           </Fold>
-          <p className={`origin-bottom-left font-display text-h1 font-semibold transition-transform max-sm:text-[36px] max-sm:leading-none duration-800 ease-grow rtl:origin-bottom-right ${
+
+          <p
+            className={`origin-bottom-left font-display text-h1 font-semibold transition-transform duration-800 ease-grow max-sm:text-[36px] max-sm:leading-none rtl:origin-bottom-right ${
               collapsed ? "scale-[0.78]" : "scale-100"
-            }`}>
+            }`}
+          >
             {t.rich("title", {
-              accent: (chunks) => (
-                <span className="accent-word text-moss">{chunks}</span>
-              ),
+              accent: (chunks) => <span className="accent-word text-moss">{chunks}</span>,
             })}
           </p>
-          <Fold open={!collapsed} className="pt-4">
+
+          <Fold open={!collapsed} className="pt-2">
             <div className="flex flex-wrap items-center gap-3.5">
               <span className="btn bg-forest-ink text-paper max-sm:min-h-10 max-sm:gap-1.5 max-sm:px-4 max-sm:py-2.5 max-sm:text-sm">
-              {t("cta")} 
-            </span>
-              <span className="text-[15px] text-ink-muted max-sm:hidden">{t('services')}</span>
+                {t("cta")}
+              </span>
+              <span className="text-[15px] text-ink-muted max-sm:hidden">{t("services")}</span>
             </div>
           </Fold>
         </div>
