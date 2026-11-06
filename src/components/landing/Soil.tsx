@@ -380,7 +380,9 @@ export function Soil({
               ),
             })}
           </p>
-          <span className="btn-highlight bg-glow">{t('cta')}</span>
+          <span className="btn-highlight bg-glow max-sm:min-h-10 max-sm:gap-1.5 max-sm:px-4 max-sm:py-2.5 max-sm:text-sm">
+            {t("cta")} 
+          </span>
         </div>
       </div>
       <p aria-hidden="true" 

@@ -156,7 +156,7 @@ export function Sky({
 
       {/* content */}
       <div className={`container-page pointer-events-none relative transition-[padding] duration-800 ease-grow ${
-          collapsed ? "pb-14" : "pb-24 max-sm:pb-22"
+          collapsed ? "pb-14" : "pb-24 max-sm:pb-12"
         }`}>
         <div className="flex max-w-140 flex-col">
           <Fold open={!collapsed} className="pb-4">
@@ -177,7 +177,9 @@ export function Sky({
           </p>
           <Fold open={!collapsed} className="pt-4">
             <div className="flex flex-wrap items-center gap-3.5">
-              <span className="btn bg-forest-ink text-paper">{t('cta')}</span>
+              <span className="btn bg-forest-ink text-paper max-sm:min-h-10 max-sm:gap-1.5 max-sm:px-4 max-sm:py-2.5 max-sm:text-sm">
+              {t("cta")} 
+            </span>
               <span className="text-[15px] text-ink-muted max-sm:hidden">{t('services')}</span>
             </div>
           </Fold>
