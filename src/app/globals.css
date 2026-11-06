@@ -124,6 +124,10 @@
   --animate-drift:   drift 10s linear infinite;
   --animate-pop:     pop .7s var(--ease-spring) both;
   --animate-grow-path: grow-path 1.4s var(--ease-grow) forwards;
+  --animate-root-pulse: root-pulse 3.6s ease-in-out infinite;   /* touch: roots glow in turn */
+  --animate-word-reveal: word-reveal 6s ease-in-out infinite;   /* touch: buried words surface */
+  --animate-root-glow-m: root-glow-m 4s ease-in-out infinite;   /* phone soil: roots glow in turn */
+
 
   @keyframes rise      { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
   @keyframes float     { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }

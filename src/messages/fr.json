@@ -69,7 +69,10 @@
     },
     "soil": {
       "ariaLabel": "Je recrute une ingénieure — ouvrir le portfolio ingénierie",
-      "eyebrow": "Sous la surface · recruteurs, responsables techniques",
+      "eyebrow": {
+        "mobile": "Sous la surface · recruteurs",
+        "desktop": "Sous la surface · recruteurs, responsables techniques"
+      },
       "title": "Je recrute une <accent>ingénieure.</accent>",
       "cta": "Explorer mon parcours ↓",
       "stack": "8+ ans · PHP · Laravel · React · TS",

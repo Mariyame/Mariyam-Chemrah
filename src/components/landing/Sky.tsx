@@ -161,10 +161,10 @@ export function Sky({
         <div className="flex max-w-140 flex-col">
           <Fold open={!collapsed} className="pb-4">
              <p className="eyebrow text-moss"></p>
-             <p className="eyebrow text-moss">
-              <span className="sm:hidden">{t('eyebrow.mobile')}</span>
-              <span className="hidden sm:inline">{t('eyebrow.desktop')}</span>
-            </p>
+              <p className="eyebrow text-moss max-sm:text-[11px] max-sm:tracking-[0.12em]">
+                <span className="sm:hidden">{t("eyebrow.mobile")}</span>
+                <span className="hidden sm:inline">{t("eyebrow.desktop")}</span>
+              </p>
           </Fold>
           <p className={`origin-bottom-left font-display text-h1 font-semibold transition-transform max-sm:text-[36px] max-sm:leading-none duration-800 ease-grow rtl:origin-bottom-right ${
               collapsed ? "scale-[0.78]" : "scale-100"
