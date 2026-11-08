@@ -7,7 +7,8 @@ export const assets = {
     mark: "/brand/logo-mark.svg",
   },
   profile: {
-    portrait: "/images/profile/portrait.webp",
+    nomadPortrait: "/images/profile/nomad-portrait.webp",
+    professionalPortrait: "/images/profile/professional-portrait.webp",
   },
   documents: {
     en: "/documents/mariyam-chemrah-resume-en.pdf",

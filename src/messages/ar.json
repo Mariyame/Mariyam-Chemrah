@@ -19,7 +19,6 @@
       "description": "مهندسة Full-Stack أولى — PHP (Laravel وSymfony) وReact وNext.js وTypeScript. أكثر من 8 سنوات في SaaS وواجهات API والتجارة الإلكترونية. منفتحة على الوظائف عن بُعد والدولية."
     }
   },
-
   "Common": {
     "name": "مريم شمراح",
     "firstName": "مريم",
@@ -45,38 +44,46 @@
       "resume": "السيرة الذاتية (PDF)",
       "downloadResume": "تحميل السيرة الذاتية (PDF)",
       "emailMe": "راسِلني",
-      "callMe": "اتصل على {phone}"
+      "callMe": "اتصل على {phone}",
+      "call": "اتصال"
     },
     "switchPath": {
       "toWork": "تبحث عن مطوّرة مستقلة؟",
       "toHire": "تبحث عن مهندسة لفريقك؟",
       "choose": "اختر طريقًا آخر"
     },
-    "copyright": "© {year} مريم شمراح"
+    "copyright": "© {year} مريم شمراح",
+    "languageNames": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "العربية"
+    },
+    "languageButton": "اللغة: {name}. تغيير اللغة"
   },
-
   "Landing": {
     "srTitle": "مريم شمراح — اختر طريقك: أطلِق مشروعًا أو وظِّف مهندسة",
     "sky": {
       "ariaLabel": "لديّ فكرة أريدها أن تنمو — افتح ملف الأعمال المستقل",
       "eyebrow": {
-        "mobile": "فوق الأرض · روّاد أعمال",
-        "desktop": "فوق الأرض · روّاد أعمال، شركات، فرق"
+        "desktop": "فوق الأرض · روّاد أعمال، شركات، فرق",
+        "mobile": "فوق الأرض · العملاء"
       },
       "title": "لديّ فكرة أريدها أن <accent>تنمو.</accent>",
       "cta": "لنبنِها معًا",
-      "services": "مواقع ويب · SaaS · واجهات API · تجارة إلكترونية"
+      "services": "مواقع ويب · SaaS · واجهات API · تجارة إلكترونية",
+      "eyebrowShort": "فوق الأرض · العملاء"
     },
     "soil": {
       "ariaLabel": "أبحث عن مهندسة لفريقي — افتح الملف الهندسي",
       "eyebrow": {
-        "mobile": "تحت الأرض · مسؤولو التوظيف",
-        "desktop": "تحت الأرض · مسؤولو التوظيف وقادة الفرق التقنية"
-      },
+        "desktop": "تحت الأرض · مسؤولو التوظيف وقادة الفرق التقنية",
+        "mobile": "تحت الأرض · مسؤولو التوظيف"
+      },    
       "title": "أبحث عن <accent>مهندسة.</accent>",
       "cta": "اكتشف مسيرتي",
       "stack": "+8 سنوات · PHP · Laravel · React · TS",
-      "hint": "↲ حرّك المؤشر لتحفر — هناك شيء مدفون هنا"
+      "hint": "↲ حرّك المؤشر لتحفر — هناك شيء مدفون هنا",
+      "eyebrowShort": "تحت الأرض · مسؤولو التوظيف"
     },
     "horizon": {
       "greeting": "مرحبًا، أنا مريم — مهندسة Full-Stack.",
@@ -93,7 +100,6 @@
       "hire": "أبحث عن مهندسة"
     }
   },
-
   "Work": {
     "nav": {
       "services": "الخدمات",
@@ -110,9 +116,18 @@
       "ctaSecondary": "شاهد أعمالي",
       "photoAlt": "مريم شمراح، مطوّرة Full-Stack، تحمل حاسوبها المحمول في الهواء الطلق",
       "stats": {
-        "years": { "value": "+8", "label": "سنوات من العمل على الويب" },
-        "fullStack": { "value": "Full-stack", "label": "تصميم ← قاعدة بيانات ← نشر" },
-        "languages": { "value": "AR · FR · EN", "label": "نعمل بلغتك" }
+        "years": {
+          "value": "+8",
+          "label": "سنوات من العمل على الويب"
+        },
+        "fullStack": {
+          "value": "Full-stack",
+          "label": "تصميم ← قاعدة بيانات ← نشر"
+        },
+        "languages": {
+          "value": "AR · FR · EN",
+          "label": "نعمل بلغتك"
+        }
       }
     },
     "stackStrip": {
@@ -154,6 +169,16 @@
       "title": "مشاريع ذات جذور عميقة.",
       "screenshot": "[لقطة شاشة للمشروع]",
       "projects": {
+        "rivulet": {
+        "category": "إنتاجية · مشروع شخصي",
+        "title": "Rivulet — تطبيق ممتع لإدارة المهام والأهداف والعادات",
+        "body": "مشروعي الشخصي، صمّمته وطوّرته بمفردي: تطبيق مجاني يحوّل المهام والأهداف والعادات إلى تقدّم مرئي ومكافآت. مبني على فكرة إنسانية — نحن لسنا آلات — مع استثناءات مرنة للروتين تتيح التوقف أثناء السفر أو المناسبات أو أسبوع أهدأ دون فقدان سلسلة الإنجاز."
+      },
+      "emi": {
+        "category": "عقارات · موقع ويب",
+        "title": "Europe Maroc Immobilier — موقع وكالة عقارية",
+        "body": "موقع وكالة عقارية مغربية لها مكاتب في الدار البيضاء ومراكش ووجدة: إعلانات البيع والكراء مع البحث حسب المدينة ونوع العقار، والشقق المفروشة، وإدارة الأملاك، وصفحات للشركات."
+      },
         "myWall": {
           "category": "تجارة إلكترونية · سوق رقمي",
           "title": "My Wall — سوق رقمي للفنانين المستقلين",
@@ -209,17 +234,17 @@
       "plans": {
         "fixed": {
           "title": "مشروع بنطاق محدد",
-          "price": "[ابتداءً من — السعر]",
+          "price": "ابتداءً من 6000 درهم",
           "body": "موقع أو تطبيق أو تكامل بمتطلبات وجدول زمني وسعر متفق عليها مسبقًا."
         },
         "monthly": {
           "title": "شراكة شهرية",
-          "price": "[السعر / شهريًا]",
+          "price": "ابتداءً من 1500 درهم / شهريًا",
           "body": "حصة مخصّصة من التطوير كل شهر للمنتجات التي تتطور باستمرار."
         },
         "consulting": {
           "title": "استشارات وتدقيق",
-          "price": "[السعر بالساعة]",
+          "price": "300 درهم / الساعة",
           "body": "مراجعة الكود وفحص الأداء ونصائح تقنية حول التقنيات التي تستخدمها حاليًا."
         }
       }
@@ -227,11 +252,10 @@
     "contact": {
       "title": "لنزرع معًا<br></br>شيئًا <accent>جميلًا.</accent>",
       "body": "حدّثني عن مشروعك — عادةً ما أردّ خلال {responseTime}.",
-      "responseTime": "[مدة الرد]",
+      "responseTime": "يوم عمل واحد",
       "footer": "الدار البيضاء، المغرب · عن بُعد في كل مكان"
     }
   },
-
   "Hire": {
     "nav": {
       "stack": "التقنيات",
@@ -261,10 +285,22 @@
     "glance": {
       "ariaLabel": "نظرة سريعة",
       "items": {
-        "years": { "value": "+8 سنوات", "label": "من هندسة الويب الاحترافية" },
-        "php": { "value": "PHP 8+", "label": "Laravel · Symfony · API Platform" },
-        "react": { "value": "React / TS", "label": "Next.js · Tailwind CSS" },
-        "endToEnd": { "value": "من البداية إلى النهاية", "label": "تصميم ← اختبار ← نشر ← صيانة" }
+        "years": {
+          "value": "+8 سنوات",
+          "label": "من هندسة الويب الاحترافية"
+        },
+        "php": {
+          "value": "PHP 8+",
+          "label": "Laravel · Symfony · API Platform"
+        },
+        "react": {
+          "value": "React / TS",
+          "label": "Next.js · Tailwind CSS"
+        },
+        "endToEnd": {
+          "value": "E2E",
+          "label": "تصميم ← اختبار ← نشر ← صيانة"
+        }
       }
     },
     "stack": {
@@ -374,21 +410,39 @@
         }
       },
       "certs": {
-        "delf": { "title": "DELF B2", "detail": "المعهد الفرنسي بالدار البيضاء · 2022" },
-        "voxy": { "title": "Voxy Proficiency — متوسط متقدم", "detail": "يونيو 2025" },
-        "duolingo": { "title": "Duolingo English", "detail": "كفاءة مهنية في العمل" }
+        "delf": {
+          "title": "DELF B2",
+          "detail": "المعهد الفرنسي بالدار البيضاء · 2022"
+        },
+        "voxy": {
+          "title": "Voxy Proficiency — متوسط متقدم",
+          "detail": "يونيو 2025"
+        },
+        "duolingo": {
+          "title": "Duolingo English",
+          "detail": "كفاءة مهنية في العمل"
+        }
       },
       "languages": {
-        "arabic": { "name": "العربية", "level": "اللغة الأم" },
-        "french": { "name": "الفرنسية", "level": "B2+" },
-        "english": { "name": "الإنجليزية", "level": "B2 · مهني" }
+        "arabic": {
+          "name": "العربية",
+          "level": "اللغة الأم"
+        },
+        "french": {
+          "name": "الفرنسية",
+          "level": "B2+"
+        },
+        "english": {
+          "name": "الإنجليزية",
+          "level": "B2 · مهني"
+        }
       }
     },
     "contact": {
       "prompt": "$ ./hire --role=\"senior full-stack\"",
       "title": "تبني فريقًا<br></br>يُنجز ويُطلق؟ <accent>لنتحدّث.</accent>",
       "relocation": "عن بُعد / الانتقال: {preference}",
-      "relocationPreference": "[تفضيلك]",
+      "relocationPreference": "",
       "footer": "الدار البيضاء، المغرب"
     }
   }

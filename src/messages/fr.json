@@ -19,7 +19,6 @@
       "description": "Ingénieure full-stack senior — PHP (Laravel, Symfony), React, Next.js, TypeScript. Plus de 8 ans de SaaS, d’API et d’e-commerce. Ouverte aux postes à distance et à l’international."
     }
   },
-
   "Common": {
     "name": "Mariyam Chemrah",
     "firstName": "Mariyam",
@@ -45,38 +44,46 @@
       "resume": "CV (PDF)",
       "downloadResume": "Télécharger le CV (PDF)",
       "emailMe": "M’écrire",
-      "callMe": "Appeler le {phone}"
+      "callMe": "Appeler le {phone}",
+      "call": "Appeler"
     },
     "switchPath": {
       "toWork": "Vous cherchez une freelance ?",
       "toHire": "Vous recrutez une ingénieure ?",
       "choose": "Choisir un autre chemin"
     },
-    "copyright": "© {year} Mariyam Chemrah"
+    "copyright": "© {year} Mariyam Chemrah",
+    "languageNames": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "العربية"
+    },
+    "languageButton": "Langue : {name}. Changer de langue"
   },
-
   "Landing": {
     "srTitle": "Mariyam Chemrah — choisissez votre chemin : lancer un projet ou recruter une ingénieure",
     "sky": {
       "ariaLabel": "J’ai une idée à faire grandir — ouvrir le portfolio freelance",
       "eyebrow": {
-        "mobile": "À la surface · clients",
-        "desktop": "À la surface · fondateurs, entreprises, équipes"  
+        "desktop": "À la surface · fondateurs, entreprises, équipes",
+        "mobile": "À la surface · clients"
       },
       "title": "J’ai une idée à faire <accent>grandir.</accent>",
-      "cta": "Construisons-la ensemble →",
-      "services": "sites web · SaaS · API · e-commerce"
+      "cta": "Construisons-la ensemble",
+      "services": "sites web · SaaS · API · e-commerce",
+      "eyebrowShort": "À la surface · clients"
     },
     "soil": {
       "ariaLabel": "Je recrute une ingénieure — ouvrir le portfolio ingénierie",
       "eyebrow": {
-        "mobile": "Sous la surface · recruteurs",
-        "desktop": "Sous la surface · recruteurs, responsables techniques"
+        "desktop": "Sous la surface · recruteurs, responsables techniques",
+        "mobile": "Sous la surface · recruteurs"
       },
       "title": "Je recrute une <accent>ingénieure.</accent>",
-      "cta": "Explorer mon parcours ↓",
+      "cta": "Explorer mon parcours",
       "stack": "8+ ans · PHP · Laravel · React · TS",
-      "hint": "↳ déplacez le curseur pour creuser — quelque chose est enfoui ici"
+      "hint": "↳ déplacez le curseur pour creuser — quelque chose est enfoui ici",
+      "eyebrowShort": "Sous la surface · recruteurs"
     },
     "horizon": {
       "greeting": "Bonjour, je suis Mariyam — ingénieure full-stack.",
@@ -93,7 +100,6 @@
       "hire": "Je recrute une ingénieure"
     }
   },
-
   "Work": {
     "nav": {
       "services": "Services",
@@ -110,9 +116,18 @@
       "ctaSecondary": "Voir mes réalisations",
       "photoAlt": "Mariyam Chemrah, développeuse full-stack, tenant son ordinateur portable en extérieur",
       "stats": {
-        "years": { "value": "8+", "label": "ans à livrer pour le web" },
-        "fullStack": { "value": "Full-stack", "label": "conception → base de données → déploiement" },
-        "languages": { "value": "AR · FR · EN", "label": "on travaille dans votre langue" }
+        "years": {
+          "value": "8+",
+          "label": "ans à livrer pour le web"
+        },
+        "fullStack": {
+          "value": "Full-stack",
+          "label": "conception → base de données → déploiement"
+        },
+        "languages": {
+          "value": "AR · FR · EN",
+          "label": "on travaille dans votre langue"
+        }
       }
     },
     "stackStrip": {
@@ -154,6 +169,16 @@
       "title": "Des projets aux racines profondes.",
       "screenshot": "[Capture du projet]",
       "projects": {
+        "rivulet": {
+        "category": "Productivité · Projet personnel",
+        "title": "Rivulet — une app gamifiée pour les tâches, objectifs et habitudes",
+        "body": "Mon projet personnel, conçu et développé seule : une application gratuite qui transforme tâches, objectifs et habitudes en progression visible et en récompenses. Pensée autour d’une idée simple — nous ne sommes pas des robots — avec des exceptions de routine pour faire une pause (voyage, événement, semaine plus calme) sans perdre sa série."
+      },
+      "emi": {
+        "category": "Immobilier · Site web",
+        "title": "Europe Maroc Immobilier — site d’une agence immobilière",
+        "body": "Site d’une agence immobilière marocaine présente à Casablanca, Marrakech et Oujda : annonces de vente et de location avec recherche par ville et type de bien, locations meublées, gestion locative et pages B2B."
+      },
         "myWall": {
           "category": "E-commerce · Marketplace",
           "title": "My Wall — une marketplace pour artistes indépendants",
@@ -209,17 +234,17 @@
       "plans": {
         "fixed": {
           "title": "Projet au forfait",
-          "price": "[À partir de — prix]",
+          "price": "À partir de 6 000 MAD",
           "body": "Un site, une application ou une intégration avec un cahier des charges, un calendrier et un prix fixés dès le départ."
         },
         "monthly": {
           "title": "Partenariat mensuel",
-          "price": "[Prix / mois]",
+          "price": "À partir de 1 500 MAD / mois",
           "body": "Un volume de développement dédié chaque mois, pour les produits qui évoluent en continu."
         },
         "consulting": {
           "title": "Conseil & audits",
-          "price": "[Taux horaire]",
+          "price":  "300 MAD / heure",
           "body": "Revues de code, audits de performance et conseils techniques sur votre stack existante."
         }
       }
@@ -227,11 +252,10 @@
     "contact": {
       "title": "Plantons<br></br>quelque chose de <accent>beau.</accent>",
       "body": "Parlez-moi de votre projet — je réponds généralement sous {responseTime}.",
-      "responseTime": "[délai de réponse]",
+      "responseTime": "un jour ouvré",
       "footer": "Casablanca, Maroc · À distance, partout dans le monde"
     }
   },
-
   "Hire": {
     "nav": {
       "stack": "Stack",
@@ -261,10 +285,22 @@
     "glance": {
       "ariaLabel": "En bref",
       "items": {
-        "years": { "value": "8+ ans", "label": "d’ingénierie web professionnelle" },
-        "php": { "value": "PHP 8+", "label": "Laravel · Symfony · API Platform" },
-        "react": { "value": "React / TS", "label": "Next.js · Tailwind CSS" },
-        "endToEnd": { "value": "De bout en bout", "label": "conception → tests → déploiement → maintenance" }
+        "years": {
+          "value": "8+ ans",
+          "label": "d’ingénierie web professionnelle"
+        },
+        "php": {
+          "value": "PHP 8+",
+          "label": "Laravel · Symfony · API Platform"
+        },
+        "react": {
+          "value": "React / TS",
+          "label": "Next.js · Tailwind CSS"
+        },
+        "endToEnd": {
+          "value": "E2E",
+          "label": "conception → tests → déploiement → maintenance"
+        }
       }
     },
     "stack": {
@@ -374,21 +410,39 @@
         }
       },
       "certs": {
-        "delf": { "title": "DELF B2", "detail": "Institut français de Casablanca · 2022" },
-        "voxy": { "title": "Voxy Proficiency — Intermédiaire avancé", "detail": "Juin 2025" },
-        "duolingo": { "title": "Duolingo English", "detail": "Compétence professionnelle" }
+        "delf": {
+          "title": "DELF B2",
+          "detail": "Institut français de Casablanca · 2022"
+        },
+        "voxy": {
+          "title": "Voxy Proficiency — Intermédiaire avancé",
+          "detail": "Juin 2025"
+        },
+        "duolingo": {
+          "title": "Duolingo English",
+          "detail": "Compétence professionnelle"
+        }
       },
       "languages": {
-        "arabic": { "name": "Arabe", "level": "langue maternelle" },
-        "french": { "name": "Français", "level": "B2+" },
-        "english": { "name": "Anglais", "level": "B2 · professionnel" }
+        "arabic": {
+          "name": "Arabe",
+          "level": "langue maternelle"
+        },
+        "french": {
+          "name": "Français",
+          "level": "B2+"
+        },
+        "english": {
+          "name": "Anglais",
+          "level": "B2 · professionnel"
+        }
       }
     },
     "contact": {
       "prompt": "$ ./hire --role=\"senior full-stack\"",
       "title": "Vous construisez une équipe<br></br>qui livre ? <accent>Parlons-en.</accent>",
       "relocation": "À distance / relocalisation : {preference}",
-      "relocationPreference": "[votre préférence]",
+      "relocationPreference": "",
       "footer": "Casablanca, Maroc"
     }
   }

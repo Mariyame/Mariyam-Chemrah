@@ -1,7 +1,5 @@
 import type { ReactNode } from "react";
 
-/* Smoothly folds content to zero height (grid 1fr → 0fr) and fades it.
-   Spacing goes in `className` as padding so it folds away too. */
 export function Fold({
   open,
   className = "",

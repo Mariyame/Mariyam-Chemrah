@@ -1,0 +1,56 @@
+.fork-sun {
+  top: var(--sun-top, 22%);
+  transition: top 0.9s var(--ease-grow);
+}
+
+.fork-stem {
+  stroke-dasharray: 100;
+  stroke-dashoffset: var(--stem-offset, 42);
+  transition: stroke-dashoffset 1s var(--ease-grow);
+}
+
+.fork-leaf {
+  transform-box: view-box;
+  transition: transform 0.8s var(--ease-spring);
+}
+
+.fork-root-grow {
+  stroke-dasharray: 100;
+  stroke-dashoffset: var(--root-offset, 60);
+  transition: stroke-dashoffset 1.4s var(--ease-grow);
+}
+
+.fork-hint { transition: opacity 0.5s ease; }
+.fork-scene[data-hover="sky"] .fork-hint { opacity: 0; }
+
+
+@keyframes fork-root-glow   { 0%, 100% { opacity: 0.05; } 50% { opacity: 0.45; } } /* phone, = canvas */
+@keyframes fork-root-pulse  { 0%, 100% { opacity: 0.2; }  50% { opacity: 1; } }    /* touch tablets */
+@keyframes fork-word-reveal { 0%, 100% { opacity: 0; } 35%, 65% { opacity: 1; } }
+
+.fork-root-pulse {
+  opacity: 0.05;
+  animation: fork-root-glow 4s ease-in-out infinite;
+}
+
+.fork-word-reveal {
+  opacity: 0;
+  animation: fork-word-reveal 6s ease-in-out infinite;
+}
+
+@media (hover: none) {
+  .fork-scene { --root-offset: 0 !important; }            /* roots fully grown */
+  .fork-scene .lantern { -webkit-mask-image: none; mask-image: none; }
+  .fork-scene .lantern .fork-root-glow { animation: fork-root-pulse 3.6s ease-in-out infinite; }
+  .fork-scene .lantern .fork-word-glow { opacity: 0; animation: fork-word-reveal 6s ease-in-out infinite; }
+  .fork-scene .lantern .fork-word-glow:nth-child(3n + 2) { animation-delay: 2s; }
+  .fork-scene .lantern .fork-word-glow:nth-child(3n + 3) { animation-delay: 4s; }
+  .fork-hint { display: none; }
+}
+
+/* ---- reduced motion ----------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .fork-root-pulse, .fork-word-reveal { animation: none; opacity: 0.3; }
+  .fork-scene .lantern .fork-root-glow,
+  .fork-scene .lantern .fork-word-glow { animation: none; }
+}

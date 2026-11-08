@@ -9,7 +9,6 @@ const LOCALES = [
   { code: "ar", short: "ع", label: "العربية", href: "/ar" },
 ] as const;
 
-
 export function LanguageSwitcher({ locale = "en" }: { locale?: string }) {
   const [open, setOpen] = useState(false);
   const wrap = useRef<HTMLDivElement>(null);
@@ -17,7 +16,6 @@ export function LanguageSwitcher({ locale = "en" }: { locale?: string }) {
   const listId = useId();
   const current = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
 
-  // Close on outside tap and on Escape (focus returns to the button)
   useEffect(() => {
     if (!open) return;
     const onPointer = (e: PointerEvent) => {
@@ -46,7 +44,6 @@ export function LanguageSwitcher({ locale = "en" }: { locale?: string }) {
 
   return (
     <nav aria-label="Language" className="pointer-events-auto">
-      {/* ---- Desktop: pills ---- */}
       <ul className="hidden gap-1.5 sm:flex">
         {LOCALES.map((l) => (
           <li key={l.code}>
@@ -63,7 +60,6 @@ export function LanguageSwitcher({ locale = "en" }: { locale?: string }) {
         ))}
       </ul>
 
-      {/* ---- Mobile: dropdown ---- */}
       <div ref={wrap} className="relative sm:hidden">
         <button
           ref={button}
@@ -94,7 +90,7 @@ export function LanguageSwitcher({ locale = "en" }: { locale?: string }) {
         <ul
           id={listId}
           hidden={!open}
-          className="absolute end-0 top-[calc(100%+8px)] z-30 min-w-40 overflow-hidden rounded-tile border border-line-light bg-paper py-1.5 shadow-float-strong animate-rise [animation-duration:.25s]"
+          className="absolute inset-e-0 top-[calc(100%+8px)] z-30 min-w-40 overflow-hidden rounded-tile border border-line-light bg-paper py-1.5 shadow-float-strong animate-rise [animation-duration:.25s]"
         >
           {LOCALES.map((l) => {
             const active = l.code === locale;

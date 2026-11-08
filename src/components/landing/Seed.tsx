@@ -47,9 +47,9 @@ export function Seed() {
         onClick={() => setBloomed((b) => !b)}
         aria-pressed={bloomed}
         aria-label={bloomed ? "Close the flower" : "Plant the seed"}
-        className="pointer-events-auto absolute -left-11.5 -top-11.5 grid size-23 cursor-pointer place-items-center rounded-full border-[3px] border-soil bg-paper p-0 text-forest-ink shadow-seed animate-[float_3.2s_ease-in-out_infinite] max-sm:-left-[34px] max-sm:-top-[34px] max-sm:size-[68px]"
+        className="pointer-events-auto absolute -left-11.5 -top-11.5 grid size-23 cursor-pointer place-items-center rounded-full border-[3px] border-soil bg-paper p-0 text-forest-ink shadow-seed animate-[float_3.2s_ease-in-out_infinite] max-sm:-left-8.5 max-sm:-top-8.5 max-sm:size-8.5"
       >
-        <LogoMark size={62} className="max-sm:size-[11.5" />
+        <LogoMark size={62} className="max-sm:size-11.5" />
       </button>
 
       <p

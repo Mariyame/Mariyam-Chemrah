@@ -2,9 +2,7 @@ import { LogoMark } from "./Logo";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from './LanguageSwitcher';
 
-
-
-export function Header({ locale = "en" }: { locale?: string }) {
+export function Header({ locale }: { locale?: string }) {
   const t = useTranslations("Common");
 
   return (
@@ -14,7 +12,7 @@ export function Header({ locale = "en" }: { locale?: string }) {
           <LogoMark size={38} />
           <span className="font-display text-[19px] font-semibold tracking-[-0.02em]">{t('name')}</span>
         </span>
-      <LanguageSwitcher />
+         <LanguageSwitcher locale={locale}/>
       </div>
     </header>
   );

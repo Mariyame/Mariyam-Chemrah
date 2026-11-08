@@ -13,6 +13,7 @@
    ========================================================================== */
 
 @import "tailwindcss";
+@import "../styles/fork.css";
 
 /* `dark:` = the "hire" (soil) theme, not the OS setting */
 @custom-variant dark (&:where([data-theme="hire"], [data-theme="hire"] *));
@@ -128,7 +129,6 @@
   --animate-word-reveal: word-reveal 6s ease-in-out infinite;   /* touch: buried words surface */
   --animate-root-glow-m: root-glow-m 4s ease-in-out infinite;   /* phone soil: roots glow in turn */
 
-
   @keyframes rise      { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
   @keyframes float     { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
   @keyframes breathe   { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
@@ -139,6 +139,9 @@
   @keyframes drift     { 0% { transform: translate(0, 0) rotate(0); opacity: 0; } 12% { opacity: .95; } 100% { transform: translate(180px, -240px) rotate(50deg); opacity: 0; } }
   @keyframes pop       { 0% { transform: scale(0) rotate(-40deg); opacity: 0; } 70% { transform: scale(1.12) rotate(6deg); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
   @keyframes grow-path { to { stroke-dashoffset: 0; } }
+  @keyframes root-pulse { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
+  @keyframes word-reveal { 0%, 100% { opacity: 0; } 35%, 65% { opacity: 1; } }
+  @keyframes root-glow-m { 0%, 100% { opacity: .05; } 50% { opacity: .45; } }
 }
 
 
@@ -412,26 +415,3 @@
 }
 
 
-/* ==========================================================================
-   app/layout.tsx — font + theme wiring (reference)
-   --------------------------------------------------------------------------
-   import { Bricolage_Grotesque, Manrope, JetBrains_Mono, IBM_Plex_Sans_Arabic } from "next/font/google";
-   import "./globals.css";
-
-   const bricolage = Bricolage_Grotesque({ subsets: ["latin"], weight: ["400","600","700"], variable: "--font-bricolage" });
-   const manrope   = Manrope({ subsets: ["latin"], weight: ["400","500","600","700"], variable: "--font-manrope" });
-   const jetbrains = JetBrains_Mono({ subsets: ["latin"], weight: ["400","500"], variable: "--font-jetbrains" });
-   const arabic    = IBM_Plex_Sans_Arabic({ subsets: ["arabic"], weight: ["400","600"], variable: "--font-arabic-face" });
-
-   // data-theme: "work" on /work, "hire" on /hire (set in each route's layout)
-   <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} data-theme="work"
-         className={`${bricolage.variable} ${manrope.variable} ${jetbrains.variable} ${arabic.variable}`}>
-
-   Usage examples
-     <p className="eyebrow">01 — Services</p>
-     <h1>Web products that <span className="accent-word">take root</span>.</h1>
-     <a className="btn-primary" href="#contact">Book a discovery call</a>
-     <div className="card card-hover">…</div>
-     <span className="chip"><span className="chip-dot" />Open to remote roles</span>
-     <div className="hire:bg-root-1 work:bg-sage-paper">…</div>
-   ========================================================================== */
