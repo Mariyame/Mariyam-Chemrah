@@ -32,7 +32,7 @@ export function WorkHero() {
           <a href="#work" className="btn-outline">{t("ctaSecondary")}</a>
         </div>
 
-        <dl className="grid grid-cols-3 gap-3 border-t border-line pt-5 sm:flex sm:flex-wrap sm:gap-8">
+        <dl className="gap-3 border-t border-line py-5 flex flex-wrap sm:gap-8">
           {HERO_STAT_KEYS.map((k) => (
             <div key={k} className="flex flex-col-reverse">
               <dt className="mt-1 text-xs leading-snug text-fg-muted sm:text-sm">{t(`stats.${k}.label`)}</dt>
@@ -54,7 +54,7 @@ export function WorkHero() {
           sizes="(min-width: 1024px) 560px, 90vw"
           className="relative h-full w-auto max-w-full object-contain object-bottom"
         />
-        <span className="float-badge inset-e-0s top-[22%] right-0 bg-white text-forest-ink max-sm:text-xs">
+        <span className="float-badge inset-e-0s top-[32%] right-0 bg-white text-forest-ink max-sm:text-xs">
           <span aria-hidden="true" className="me-2 inline-block size-2 rounded-full bg-moss" />
           {HERO_CHIPS[0]}
         </span>

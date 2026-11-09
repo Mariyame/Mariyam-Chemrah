@@ -30,7 +30,7 @@ export const CERT_KEYS = ["delf", "voxy", "duolingo"] as const;
 
 
 export const LANGUAGES: readonly { key: string; level: number }[] = [
-  { key: "arabic", level: 100 },
-  { key: "french", level: 78 },
-  { key: "english", level: 72 },
+  { key: "arabic", level: 95 },
+  { key: "french", level: 72 },
+  { key: "english", level: 78 },
 ];

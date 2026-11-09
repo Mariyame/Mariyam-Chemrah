@@ -3,7 +3,6 @@ import { PROCESS } from "@/content/work";
 import { Icon } from "@/components/ui/Icon";
 import { Section } from "@/components/ui/Section";
 
-/* Phone: vertical vine with dots. Desktop: four columns with a top rule. */
 export function Process() {
   const t = useTranslations("Work.process");
 

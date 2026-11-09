@@ -117,8 +117,8 @@
       "photoAlt": "Mariyam Chemrah, full-stack developer, holding her laptop outdoors",
       "stats": {
         "years": {
-          "value": "8+",
-          "label": "years shipping for the web"
+          "value": "8+ years",
+          "label": "shipping for the web"
         },
         "fullStack": {
           "value": "Full-stack",
@@ -430,11 +430,11 @@
         },
         "french": {
           "name": "French",
-          "level": "B2+"
+          "level": "B2"
         },
         "english": {
           "name": "English",
-          "level": "B2 · professional"
+          "level": "B2+"
         }
       }
     },
