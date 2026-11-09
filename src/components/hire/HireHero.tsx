@@ -1,10 +1,11 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { CONTACT, LINKS } from "@/config/site";
 import { HERO_CHIP_KEYS } from "@/content/hire";
 import { Icon } from "@/components/ui/Icon";
 import { rich } from "@/lib/rich";
 import { assets } from "config/assets";
+
 
 const RINGS = [
   { r: 110, o: 0.5 }, { r: 140, o: 0.32 }, { r: 168, o: 0.22 },
@@ -14,6 +15,8 @@ const RINGS = [
 export function HireHero() {
   const t = useTranslations("Hire.hero");
   const c = useTranslations("Common.links");
+  const locale = useLocale();
+  const resume = locale === "fr" ? assets.documents.fr : assets.documents.en;
 
   return (
     <section id="top" className="container-page flex flex-wrap-reverse items-center gap-10 pt-4 sm:pt-8">
@@ -41,13 +44,13 @@ export function HireHero() {
             {t("ctaPrimary")}
             <Icon name="arrowRight" size={18} strokeWidth={2} className="rtl:-scale-x-100" />
           </a>
-          <div className="grid grid-cols-3 gap-2 sm:flex sm:gap-3">
-            <a href={LINKS.resume} download className="btn-outline px-3 text-sm sm:hidden">{c("resume")}</a>
-            <a href={LINKS.github} className="btn-outline px-3 text-sm sm:px-6 sm:text-base">
+          <div className="grid grid-cols-3 gap-2 sm:flex sm:gap-3 sm:pb-0 pb-6">
+            <a href={resume} download className="btn-outline px-3 py-0 text-sm sm:hidden">{c("resume")}</a>
+            <a href={LINKS.github} className="btn-outline px-3 text-sm sm:px-6 py-0 sm:text-base">
               <Icon name="github" size={18} className="max-sm:hidden" />
               {c("github")}
             </a>
-            <a href={LINKS.linkedin} className="btn-outline px-3 text-sm sm:px-6 sm:text-base">
+            <a href={LINKS.linkedin} className="btn-outline px-3 text-sm py-0 sm:px-6 sm:text-base">
               <Icon name="linkedin" size={18} className="max-sm:hidden" />
               {c("linkedin")}
             </a>

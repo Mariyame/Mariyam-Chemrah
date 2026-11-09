@@ -2,13 +2,13 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { CONTACT, LINKS, ROUTES, type Page } from "@/config/site";
 
-/* Bottom line of both pages: copyright · links · switch to the other path. */
+
 export function SiteFooter({ page, location }: { page: Page; location: string }) {
   const c = useTranslations("Common");
   const year = new Date().getFullYear();
 
   return (
-    <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-t border-line pt-7 text-sm text-fg-muted">
+    <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-t border-line p-7 text-sm text-fg-muted">
       <span>
         {c("copyright", { year })} · {location}
       </span>

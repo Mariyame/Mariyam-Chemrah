@@ -29,7 +29,7 @@ export function Experience() {
                   {t(job("period"), { present: t("present") })}
                 </p>
               </div>
-              <div className="min-w-0 flex-[1_1_32rem]">
+              <div className="min-w-0 flex-[1_1_auto">
                 <h3 className="text-[22px] sm:text-[26px]">{t(job("role"))}</h3>
                 <p className="mb-2 text-sm text-fg-muted sm:mb-3 sm:text-[15px]">{t(job("company"))}</p>
                 {bullets ? (

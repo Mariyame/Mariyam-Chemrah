@@ -1,16 +1,16 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { NAV, LINKS, type Page } from "@/config/site";
 import { Icon } from "@/components/ui/Icon";
 import { LogoMark } from "@/components/ui/LogoMark";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileMenu } from "./MobileMenu";
+import { assets } from "config/assets";
 
-/* Shared header for /work and /hire. Server component; only the language
-   switcher and the mobile menu are client islands. */
 export function SiteHeader({ page }: { page: Page }) {
   const t = useTranslations(page === "work" ? "Work.nav" : "Hire.nav");
   const c = useTranslations("Common");
-
+  const locale = useLocale();
+  const resume = locale === "fr" ? assets.documents.fr : assets.documents.en;
   const links = NAV[page].map((item) => (
     <a key={item.id} href={`#${item.id}`} className="no-underline">
       {t(item.key)}
@@ -21,7 +21,7 @@ export function SiteHeader({ page }: { page: Page }) {
     page === "work" ? (
       <a href="#contact" className="btn-inverse px-5 py-3 text-[15px]">{t("cta")}</a>
     ) : (
-      <a href={LINKS.resume} download className="btn-outline border-accent px-5 py-3 text-[15px] text-accent">
+      <a href={resume} download className="btn-outline border-accent px-5 py-3 text-[15px] text-accent">
         <Icon name="download" size={16} strokeWidth={2} />
         {t("resume")}
       </a>
@@ -31,7 +31,7 @@ export function SiteHeader({ page }: { page: Page }) {
     <header className="relative z-30">
       <div className="container-page flex items-center justify-between gap-4 py-4 sm:py-5">
         <a href="#top" className="flex min-w-0 items-center gap-2.5 text-fg no-underline sm:gap-3">
-          <LogoMark size={36} className="max-sm:size-[30px]" />
+          <LogoMark size={36} className="max-sm:size-7.5" />
           <span className="truncate font-display text-[17px] font-semibold tracking-[-0.02em] sm:text-xl">{c("name")}</span>
         </a>
 

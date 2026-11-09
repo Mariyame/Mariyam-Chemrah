@@ -26,7 +26,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function HirePage({ params }: Props) {
   const { locale } = await params;
 
-
   return (
     <div data-theme="hire" className="min-h-dvh overflow-x-clip bg-bg text-fg">
       <SiteHeader page="hire" />

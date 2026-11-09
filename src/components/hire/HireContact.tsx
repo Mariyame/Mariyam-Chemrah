@@ -1,12 +1,15 @@
-import { useTranslations } from "next-intl";
-import { CONTACT, LINKS } from "@/config/site";
+import { useLocale, useTranslations } from "next-intl";
+import { CONTACT } from "@/config/site";
 import { Icon } from "@/components/ui/Icon";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { rich } from "@/lib/rich";
+import { assets } from "config/assets";
 
 export function HireContact() {
   const t = useTranslations("Hire.contact");
   const c = useTranslations("Common.links");
+  const locale = useLocale();                               
+   const resume = locale === "fr" ? assets.documents.fr : assets.documents.en;
 
   return (
     <section id="contact" aria-labelledby="contact-title" className="border-t border-line bg-bg-alt">
@@ -25,7 +28,7 @@ export function HireContact() {
               <span className="sm:hidden">{c("emailMe")}</span>
               <span className="hidden sm:inline">{CONTACT.email}</span>
             </a>
-            <a href={LINKS.resume} download className="btn-outline">
+            <a href={resume} download className="btn-outline">
               <Icon name="download" size={18} strokeWidth={2} />
               {c("downloadResume")}
             </a>

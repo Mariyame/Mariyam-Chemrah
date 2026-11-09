@@ -41,8 +41,8 @@
       "linkedin": "LinkedIn",
       "github": "GitHub",
       "freelancePlatforms": "Malt / Upwork",
-      "resume": "Résumé PDF",
-      "downloadResume": "Download résumé (PDF)",
+      "resume": "Résumé",
+      "downloadResume": "Download résumé",
       "emailMe": "Email me",
       "callMe": "Call {phone}",
       "call": "Call"
