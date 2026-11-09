@@ -35,7 +35,7 @@ export type Project = {
 export const PROJECTS: readonly Project[] = [
   { key: "rivulet", tags: ["Laravel", "React Native", "Next.js"], layout: "feature", tone: "lichen", image: "/images/projects/rivulet/cover-app.webp", href: "https://rivulet-three.vercel.app/" },
   { key: "emi", tags: ["Laravel", "Next.js", "CMS"], layout: "feature", tone: "forest", image: "/images/projects/emi/cover.webp", href: "https://www.europemarocimmo.com/" },
-  { key: "myWall", tags: ["Laravel", "PayPal", "CMI"], layout: "feature", tone: "lichen", image: "/images/projects/myWall/cover.webp", href: "https://my-wall.fr" },
+  { key: "myWall", tags: ["Laravel", "PayPal", "CMI"], layout: "feature", tone: "lichen", image: "/images/projects/mywall/cover.webp", href: "https://my-wall.fr" },
   { key: "add", tags: ["Laravel queues", "WordPress", "Webhooks"], layout: "feature", tone: "forest", image: "/images/projects/add/cover.webp", href: "https://www.autodealersdigital.com/" },
   { key: "ga4", tags: ["PHP", "GA4 Admin & Data APIs"], layout: "card" },
   { key: "leadTracking", tags: ["JavaScript", "MongoDB", "Python / FastAPI"], layout: "card" },
