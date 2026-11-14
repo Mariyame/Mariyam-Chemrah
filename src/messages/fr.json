@@ -234,17 +234,17 @@
       "plans": {
         "fixed": {
           "title": "Projet au forfait",
-          "price": "À partir de 6 000 MAD",
+          "price": "À partir de $390",
           "body": "Un site, une application ou une intégration avec un cahier des charges, un calendrier et un prix fixés dès le départ."
         },
         "monthly": {
           "title": "Partenariat mensuel",
-          "price": "À partir de 1 500 MAD / mois",
+          "price": "À partir de $150 / mois",
           "body": "Un volume de développement dédié chaque mois, pour les produits qui évoluent en continu."
         },
         "consulting": {
           "title": "Conseil & audits",
-          "price":  "300 MAD / heure",
+          "price":  "$25 / heure",
           "body": "Revues de code, audits de performance et conseils techniques sur votre stack existante."
         }
       }
