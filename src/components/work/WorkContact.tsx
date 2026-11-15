@@ -27,10 +27,20 @@ export function WorkContact() {
               <span className="sm:hidden">{c("links.emailMe")}</span>
               <span className="hidden sm:inline">{CONTACT.email}</span>
             </a>
-            <a href={`tel:${CONTACT.phone}`} className="btn-outline border-line-dark-3 text-mist">
-              {c("links.callMe", { phone: CONTACT.phoneDisplay })}
+            <a
+              href={`tel:${CONTACT.phone}`}
+              className="btn-outline border-line-dark-3 text-mist"
+            >
+              {c.rich("links.callMe", {
+                number: CONTACT.phoneDisplay,
+                phone: (chunks) => (
+                  <span dir="ltr" className="inline-block">
+                    {chunks}
+                  </span>
+                ),
+              })}
             </a>
-          </div>
+          </div> 
         </div>
         <SiteFooter page="work" location={t("footer")} />
       </div>

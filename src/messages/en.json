@@ -44,7 +44,7 @@
       "resume": "Résumé",
       "downloadResume": "Download résumé",
       "emailMe": "Email me",
-      "callMe": "Call {phone}",
+      "callMe": "Call <phone>{number}</phone>",
       "call": "Call"
     },
     "switchPath": {

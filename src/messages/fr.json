@@ -44,7 +44,7 @@
       "resume": "CV (PDF)",
       "downloadResume": "Télécharger le CV (PDF)",
       "emailMe": "M’écrire",
-      "callMe": "Appeler le {phone}",
+      "callMe": "Appeler le <phone>{number}</phone>",
       "call": "Appeler"
     },
     "switchPath": {
@@ -184,7 +184,7 @@
           "title": "My Wall — une marketplace pour artistes indépendants",
           "body": "Conception et développement d’une marketplace ouverte où les artistes publient leurs œuvres et les vendent sous forme de décoration murale, d’objets déco et de produits lifestyle, avec intégration des paiements PayPal et CMI."
         },
-        "dealerBuilder": {
+        "add": {
           "category": "SaaS · Automobile",
           "title": "Un créateur de sites pour concessionnaires automobiles",
           "body": "Chez Auto Dealers Digital, j’ai contribué à un créateur de sites SaaS sous Laravel et WordPress, avec des endpoints REST événementiels, des webhooks et des tâches en file d’attente pour la rapidité."

@@ -36,8 +36,8 @@ export default async function WorkPage({ params }: Props) {
         <Projects />
         <Process />
         <Pricing />
+        <WorkContact />
       </main>
-      <WorkContact />
     </div>
   );
 }

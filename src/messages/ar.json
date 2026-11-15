@@ -44,7 +44,7 @@
       "resume": "السيرة الذاتية",
       "downloadResume": "تحميل السيرة الذاتية",
       "emailMe": "راسلني عبر البريد الإلكتروني",
-      "callMe": "اتصل على {phone}",
+      "callMe": "اتصل على <phone>{number}</phone>",
       "call": "اتصال"
     },
     "switchPath": {
@@ -250,7 +250,7 @@
       }
     },
     "contact": {
-      "title": "لنزرع معًا<br></br>شيئًا <accent>جميلًا.</accent>",
+      "title": "لِنُحوِّل فكرتك إلى شيء <accent>مميّزًا.</accent>",
       "body": "أخبرني عن مشروعك — عادةً ما أرد خلال {responseTime}.",
       "responseTime": "يوم عمل واحد",
       "footer": "الدار البيضاء، المغرب · العمل عن بُعد حول العالم"
