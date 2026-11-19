@@ -33,7 +33,8 @@ export type Project = {
 };
 
 export const PROJECTS: readonly Project[] = [
-  { key: "rivulet", tags: ["Laravel", "React Native", "Next.js"], layout: "feature", tone: "lichen", image: "/images/projects/rivulet/cover-app.webp", href: "https://rivulet-three.vercel.app/" },
+  { key: "boa", tags: ["UX/UI", "Online booking", "Responsive"], layout: "feature", tone: "forest", image: "/images/projects/boa/cover.webp", href: "https://www.leboudoiroriental-agadir.com" },
+  { key: "rivulet", tags: ["Laravel", "React Native", "Next.js"], layout: "feature", tone: "lichen", image: "/images/projects/rivulet/cover-app.webp", href: "https://rivulet-three.vercel.app" },
   { key: "emi", tags: ["Laravel", "Next.js", "CMS"], layout: "feature", tone: "forest", image: "/images/projects/emi/cover.webp", href: "https://www.europemarocimmo.com/" },
   { key: "myWall", tags: ["Laravel", "PayPal", "CMI"], layout: "feature", tone: "lichen", image: "/images/projects/mywall/cover.webp", href: "https://my-wall.fr" },
   { key: "add", tags: ["Laravel queues", "WordPress", "Webhooks"], layout: "feature", tone: "forest", image: "/images/projects/add/cover.webp", href: "https://www.autodealersdigital.com/" },

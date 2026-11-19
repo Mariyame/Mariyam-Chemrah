@@ -169,6 +169,11 @@
       "title": "Projects with deep roots.",
       "screenshot": "[Project screenshot]",
       "projects": {
+       "boa": {
+        "category": "Spa & hammam · Website concept",
+        "title": "Le Boudoir Oriental — an online booking experience for an oriental spa",
+        "body": "Website redesign concept for a spa and hammam in Agadir: express booking with real-time slots, online payment or deposit, gift cards and a responsive design inspired by Moroccan zellige and tadelakt."
+      },
       "rivulet": {
         "category": "Productivity · Side project",
         "title": "Rivulet — a gamified app for tasks, goals and habits",

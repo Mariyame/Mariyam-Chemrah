@@ -169,6 +169,11 @@
       "title": "Des projets aux racines profondes.",
       "screenshot": "[Capture du projet]",
       "projects": {
+        "boa": {
+        "category": "Spa & hammam · Concept de site web",
+        "title": "Le Boudoir Oriental — une expérience de réservation en ligne pour un spa oriental",
+        "body": "Concept de refonte du site d'un spa et hammam à Agadir : réservation express avec créneaux en temps réel, paiement en ligne ou acompte, cartes cadeaux et un design responsive inspiré du zellige et du tadelakt marocains."
+      },
         "rivulet": {
         "category": "Productivité · Projet personnel",
         "title": "Rivulet — une app gamifiée pour les tâches, objectifs et habitudes",
