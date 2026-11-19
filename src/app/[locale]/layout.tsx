@@ -8,6 +8,7 @@ import {
   IBM_Plex_Sans_Arabic,
 } from "next/font/google";
 import '../globals.css';
+import { GoogleTagManager } from "@next/third-parties/google";
 
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mariyam-chemrah.dev";
@@ -253,6 +254,7 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
         />
       </body>
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-5WLF7ST8"} />
     </html>
   );
 }
