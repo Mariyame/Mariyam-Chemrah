@@ -271,7 +271,7 @@
     },
     "hero": {
       "prompt": "$ whoami",
-      "title": "Ingénieure Full-Stack Senior.<br></br><muted>Des racines profondes côté back-end,</muted> <accent>une canopée en React.</accent>",
+      "title": "<strike>L’IA va-t-elle prendre mon travail ?</strike><br></br><accent>L’IA, c’est mon travail.</accent>",
       "intro": "Plus de 8 ans à concevoir, développer et maintenir des plateformes SaaS, des API REST, des tableaux de bord et des systèmes e-commerce — de solides bases en PHP (Laravel, Symfony) et un intérêt croissant pour les architectures API-first avec React, Next.js, TypeScript et Docker.",
       "chips": {
         "remote": "Ouverte aux postes à distance & à l’international",

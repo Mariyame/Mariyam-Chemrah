@@ -271,7 +271,7 @@
     },
     "hero": {
       "prompt": "$ whoami",
-      "title": "Senior Full-Stack Engineer.<br></br><muted>Deep roots in the back end,</muted> <accent>a canopy in React.</accent>",
+      "title": "<strike>Will AI take my job?</strike><br></br><accent>AI is my job.</accent>",
       "intro": "8+ years designing, building and maintaining SaaS platforms, REST APIs, dashboards and e-commerce systems — strong PHP fundamentals (Laravel, Symfony) and a growing focus on API-first architectures with React, Next.js, TypeScript and Docker.",
       "chips": {
         "remote": "Open to remote & international roles",
